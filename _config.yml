@@ -107,10 +107,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Edberto Lima"
+  name             : "Edberto Moura Lima"
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Forest Engineer"
-  location         : "UFSM, Brazil"
+  bio              : "B.Sc., M.Sc., Dr. in Forest Engineering"
+  location         : "Wien, Austria"
   email            : "edberto.moura@gmail.com"
   #GitHub           : "EdbertoLima"
   

@@ -5,7 +5,7 @@ author_profile: true
 date: 2025-01-06 20:33:41 CET
 ---
 
-## Edberto Moura Lima
+**Edberto Moura Lima**
 
 Hi there! I am a Junior Scientist specializing in the sustainable use of natural resources. My expertise includes forest science, climate change, ecohydrology, soil physics, and landscape planning and management. My research primarily focuses on understanding how sustainable land-use practices can mitigate human impacts on the environment while also enhancing agricultural productivity in the context of climate change.
 

@@ -1,4 +1,12 @@
 
+edbertolima.github.io
+
+my personal website, not that i really needed one.
+
+Uses jekyll, poole and the Minimal Mistakes theme.
+
+Hosted on Github Pages.
+
 ## Credits
 
 ### Creator

@@ -51,6 +51,9 @@ FI-00014 University of Helsinki, Finland<br/>
 `2016 - 2018`
 **Research Intern** <br/> EMBRAPA FLORESTA, PR, Brazil
 
+`2015`
+**Intern** – *Department of Engineering, Terracap*, Brasília, Brazil.
+
 ## Publications
 
 *Publication list also available [in Google Scholar](https://scholar.google.com/citations?user=rbwTqKIAAAAJ&hl=en).<!--\* = student as lead author, &dagger; = shared first authorship.*-->

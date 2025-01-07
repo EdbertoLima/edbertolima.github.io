@@ -52,7 +52,7 @@ FI-00014 University of Helsinki, Finland<br/>
 **Research Intern** <br/> EMBRAPA FLORESTA, PR, Brazil
 
 `2015`
-**Intern** – *Department of Engineering, Terracap*, Brasília, Brazil.
+**Intern** <br/> *Department of Engineering, Terracap*, Brasília, Brazil.
 
 ## Publications
 

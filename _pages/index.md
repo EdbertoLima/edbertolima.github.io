@@ -23,7 +23,7 @@ FI-00014 University of Helsinki, Finland<br/>
   <a href="https://orcid.org/0000-0002-8447-8460"><i class="fa-brands fa-orcid"></i> 0000-0002-8447-8460</a> - 
   <!-- <a href="https://www.researchgate.net/profile/David_Whipp"><i class="ai ai-researchgate"></i> David_Whipp</a> - -->
   <a href="https://www.linkedin.com/in/edbertolima/"><i class="fa-brands fa-linkedin"></i> edbertolima</a> - 
-  <a href="https://x.com/EdbertoM"><i class="fab fa-fw fa-x-twitter"></i> @EdbertoM</a>
+  <a href="https://bsky.app/profile/edbertoml.bsky.social"><i class="fab fa-fw fa-x-twitter"></i> @edbertoml.bsky.social</a>
 </div>
 
 ## Education 

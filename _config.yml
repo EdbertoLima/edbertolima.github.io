@@ -148,7 +148,7 @@ author:
       # url: "mailto:edberto.moura@gmail.com"
     - label: "X"
       icon: "fab fa-fw fa-x-twitter"
-      url: "https://twitter.com/EdbertoM"
+      # url: "https://twitter.com/EdbertoM"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"

@@ -39,7 +39,7 @@ FI-00014 University of Helsinki, Finland<br/>
 
 ## Experience
 `2025`
-**Senior Research** <br/> *BAW Research*, Pollnbergstraße 1,3252 Petzenkirchen, Austria.
+**Senior Researcher** <br/> *BAW Research*, Pollnbergstraße 1,3252 Petzenkirchen, Austria.
 
 `2022-2024`
 **Postdoctoral fellow** <br/> *Institute of Hydrology and Water Management (HyWa) <br/> Department of Water, Atmosphere and Environment (WAU) <br/> BOKU University*, Vienna, Austria.

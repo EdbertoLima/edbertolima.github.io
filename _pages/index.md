@@ -3,7 +3,6 @@ title: Edberto Lima's CV
 layout: cv
 permalink: /CV
 author_profile: false
-date: last-modified
 ---
 <br/>
 

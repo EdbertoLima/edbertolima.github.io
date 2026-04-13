@@ -66,6 +66,11 @@ FI-00014 University of Helsinki, Finland<br/>
 -->
 
 ### Journal articles
+`2025`
+Borja, D., Daněk, J., Assis, J. C., Gorosábel, A., Lundquist, C., Rosa, I., … **Lima, E. M.**, Borges, R. C. Rethinking scenario building for sustainable futures: mobilizing conscientização, social learning and knowledge co-production. Ecosystems and People, 21(1).doi: [https://doi.org/10.1080/26395916.2025.2507247](https://doi.org/10.1080/26395916.2025.2507247), 2025.
+
+`2025`
+Niemeyer J, Resende FM, **Lima, E. M.** and Vale MM. Risk and adaptation of socio-ecological systems to global change in the dry forests of Northeastern South America. Front. Ecol. Evol. 13:1536445. doi: [10.3389/fevo.2025.1536445](10.3389/fevo.2025.1536445), 2025.
 
 `2024`
 Mehdi-Schulz, B., Zoboli, O., Schürz, C., Strenge, E., **Lima, E. M.**, Parajka, J., Wang, C., Zessner, M., & Schönhart, M. The impacts of climate change on nitrogen losses to the environment in Austria: A dual model analysis across spatial and temporal scales to support policy decisions. Science of The Total Environment, 918, 170730. doi: [10.1016/j.scitotenv.2024.170730](https://doi.org/10.1016/j.scitotenv.2024.170730), 2024.

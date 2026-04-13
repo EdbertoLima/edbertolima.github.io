@@ -622,5 +622,6 @@ Residence: Austria (Rot-Weiß-Rot – Karte plus)
 Family: 
 -->
 
-<br/>Last updated: January 2025<br/><br/>
+<br/>Last updated: 13 April 2026<br/>
 Last updated: {{ page.last_modified_at | date: "%B %Y" }}
+<br/>

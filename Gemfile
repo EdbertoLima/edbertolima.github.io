@@ -4,3 +4,4 @@ gemspec
 gem "webrick", "~> 1.9"
 gem 'csv', '~> 3.3.2'
 gem 'base64'
+gem "jekyll-last-modified-at"

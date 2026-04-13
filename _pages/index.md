@@ -623,4 +623,4 @@ Family:
 -->
 
 <br/>Last updated: January 2025<br/><br/>
-Last updated: {{< modified >}}
+Last updated: {{ page.last_modified_at | date: "%B %Y" }}

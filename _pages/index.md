@@ -622,3 +622,4 @@ Family:
 -->
 
 <br/>Last updated: January 2025<br/><br/>
+Last updated: {{< modified >}}

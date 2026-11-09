@@ -17,7 +17,7 @@ minimal_mistakes_skin    :  "air" # "default", "air", "aqua", "contrast", "dark"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : #"Dr. Edberto Lima"
+title                    : "Edberto Moura Lima"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Edberto Lima"
@@ -189,6 +189,11 @@ exclude:
   - package.json
   - package-lock.json
   - Rakefile
+  - minimal-mistakes-jekyll.gemspec
+  - SECURITY.md
+  - staticman.yml
+  - README.md
+  - CHANGELOG.md
   - README
   - tmp
   - /docs # ignore Minimal Mistakes /docs

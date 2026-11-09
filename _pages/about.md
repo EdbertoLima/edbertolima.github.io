@@ -5,14 +5,9 @@ author_profile: true
 date: 2025-01-06 20:33:41 CET
 ---
 
-<br/>
-**Edberto Moura Lima**
-
 I am a Senior Researcher at [BAW Research](https://www.baw.at/baw-research.html) (Federal Agency for Water Management, Austria), working on ecohydrology and remote sensing of evapotranspiration. I hold a PhD in Forest Engineering from the Universidade Federal de Santa Maria, Brazil, and was a postdoctoral researcher at the Institute of Hydrology and Water Management (HyWa), BOKU University, Vienna.
 
 My research looks at how land use, soil management and nature-based solutions shape the water balance, water quality and ecosystem services of agricultural and natural landscapes under climate change.
-
-[Online CV](/CV) | [Download CV (PDF)](/assets/files/Edberto_Moura_Lima_CV.pdf)
 
 ### Current work
 

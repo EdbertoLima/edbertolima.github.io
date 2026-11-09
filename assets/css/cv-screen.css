@@ -193,3 +193,60 @@ strong {
 @media only screen and (max-width: 480px) {
 	make one column somehow...
 }*/
+
+/* Top navigation bar (matches the home page masthead) */
+.cv-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: -1em 0 2em -1em;
+	padding: 1em 2em;
+	border-bottom: 1px solid #ddd;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.cv-nav a {
+	text-decoration: none;
+	color: #222;
+}
+
+.cv-nav-title {
+	font-weight: bold;
+}
+
+.cv-nav-links a {
+	margin-left: 1.5em;
+}
+
+/* Single-column layout on phones */
+@media only screen and (max-width: 600px) {
+	body {
+		margin-right: 1em;
+	}
+	h1, h2, h3, p, ul, #webaddress {
+		position: static;
+		width: auto;
+		left: auto;
+		top: auto;
+		text-align: left;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		margin-top: 2em;
+		margin-bottom: 0.5em;
+	}
+	h3 {
+		margin-top: 1em;
+	}
+	p code {
+		position: static;
+		display: block;
+		text-align: left;
+		margin-bottom: 0.2em;
+	}
+	.cv-nav {
+		padding: 1em;
+	}
+}

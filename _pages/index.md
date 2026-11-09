@@ -19,8 +19,6 @@ PhD in Forest Engineering
   <a href="https://bsky.app/profile/edbertoml.bsky.social"><i class="fa-brands fa-bluesky"></i> @edbertoml.bsky.social</a>
 </div>
 
-<p class="cv-download"><a href="/assets/files/Edberto_Moura_Lima_CV.pdf"><i class="fa-solid fa-file-pdf"></i> Download CV (PDF)</a></p>
-
 ## Education 
 
 `2018-2022`

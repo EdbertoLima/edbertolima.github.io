@@ -1,19 +1,23 @@
 ---
-layout: default
 ---
-
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
-  <link href="assets/css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="assets/css/cv-print.css" type="text/css" rel="stylesheet" media="print">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
-  <script src="https://kit.fontawesome.com/4f661f1f34.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}CV{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/cv-screen.css' | relative_url }}">
 </head>
 <body>
+  <nav class="cv-nav">
+    <a class="cv-nav-title" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <span class="cv-nav-links">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/assets/files/Edberto_Moura_Lima_CV.pdf' | relative_url }}">PDF</a>
+    </span>
+  </nav>
   <div id="main">
     <div id="content">
     {{ content }}

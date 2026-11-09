@@ -24,6 +24,7 @@ FA_CSS = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/a
 PRINT_CSS = """
 @page { size: A4; margin: 16mm 14mm 16mm 10mm; }
 body { margin: 0; font-size: 10pt; }
+body, h1, h2, h3, h4 { font-family: Verdana, "DejaVu Sans", sans-serif; }
 h1 { font-size: 2.4em; }
 h2 { margin-top: 1.6em; break-after: avoid; }
 h3 { break-after: avoid; }

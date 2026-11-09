@@ -144,7 +144,7 @@ you separate software problems from problems in your own data.
 | Crops do not grow | No management assigned, or planting outside the period |
 | The model stops right away | Climate does not cover the period, or a referenced file is missing |
 | The run "succeeds" but results look odd | SWAT+ silently skips unknown names and missing weather files: search `diagnostics.out` for "not found" |
-| Baseflow disappears in dry spells | Aquifer return-flow threshold (`flo_min`) too high |
+| Baseflow disappears in dry spells | Water-table depth threshold (`flo_min`, in `aquifer.aqu`) too shallow: groundwater only flows when the water table is within `flo_min` of the surface |
 
 ## Before calibrating: does the water balance make sense?
 

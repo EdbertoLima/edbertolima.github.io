@@ -179,7 +179,7 @@ assim é possível separar problemas do software de problemas dos próprios dado
 | As culturas não se desenvolvem | Manejo não atribuído ou semeadura fora do período simulado |
 | A simulação é interrompida logo no início | Série climática que não cobre o período, ou arquivo referenciado ausente |
 | A simulação termina "com sucesso", mas os resultados não fazem sentido | O SWAT+ ignora silenciosamente nomes desconhecidos e arquivos climáticos ausentes: procure "not found" no arquivo `diagnostics.out` |
-| O escoamento de base desaparece nas estiagens | Limiar de armazenamento para o escoamento de retorno do aquífero (`flo_min`) alto demais |
+| O escoamento de base desaparece nas estiagens | Profundidade-limite do lençol freático (`flo_min`, em `aquifer.aqu`) pequena demais: só há escoamento subterrâneo quando o lençol está a menos de `flo_min` da superfície |
 
 ## Antes de calibrar: o balanço hídrico faz sentido?
 

@@ -11,12 +11,14 @@ My research looks at how land use, soil management and nature-based solutions sh
 
 ### News
 
-- **Oct 2026** - New first-author paper in *Frontiers in Sustainable Food Systems* on natural ecosystem loss and land-use change in an Atlantic Forest agricultural basin. [DOI](https://doi.org/10.3389/fsufs.2026.1912707)
-- **Oct 2026** - Taught an 8-hour introductory course on SWAT+ watershed modelling at SNCT 2026, IFBA Vitória da Conquista, Brazil. Read the write-up: [English](/swat-plus-first-steps/) | [Português](/primeiros-passos-swat-plus/)
-- **Jul 2026** - Co-authored study on climate change impacts on low-flow extremes in a Croatian catchment (SWAT model), presented at the 5th International Congress on Earth and Geological Sciences, Vienna. [DOI](https://doi.org/10.51219/URForum.2026.Josip-Janjic)
-- **Jun 2026** - First meeting of the VeSchN advisory board at the Burgenland water management office.
-- **May 2026** - Paper in the *European Journal of Soil Science* on climate impacts and no-till for winter wheat across Europe. [DOI](https://doi.org/10.1111/ejss.70363)
-- **Apr 2026** - VeSchN project kick-off at the Biological Station Illmitz, Lake Neusiedl.
+<ul class="news">
+  <li><span class="news-date">Oct 2026</span><span class="news-text" markdown="span">New first-author paper in *Frontiers in Sustainable Food Systems* on natural ecosystem loss and land-use change in an Atlantic Forest agricultural basin. [DOI](https://doi.org/10.3389/fsufs.2026.1912707)</span></li>
+  <li><span class="news-date">Oct 2026</span><span class="news-text" markdown="span">Taught an 8-hour introductory course on SWAT+ watershed modelling at SNCT 2026, IFBA Vitória da Conquista, Brazil. [Read the course guide](/swat-plus-first-steps/) ([em português](/primeiros-passos-swat-plus/))</span></li>
+  <li><span class="news-date">Jul 2026</span><span class="news-text" markdown="span">Co-authored study on climate change impacts on low-flow extremes in a Croatian catchment (SWAT model), presented at the 5th International Congress on Earth and Geological Sciences, Vienna. [DOI](https://doi.org/10.51219/URForum.2026.Josip-Janjic)</span></li>
+  <li><span class="news-date">Jun 2026</span><span class="news-text" markdown="span">First meeting of the VeSchN advisory board at the Burgenland water management office.</span></li>
+  <li><span class="news-date">May 2026</span><span class="news-text" markdown="span">Paper in the *European Journal of Soil Science* on climate impacts and no-till for winter wheat across Europe. [DOI](https://doi.org/10.1111/ejss.70363)</span></li>
+  <li><span class="news-date">Apr 2026</span><span class="news-text" markdown="span">VeSchN project kick-off at the Biological Station Illmitz, Lake Neusiedl.</span></li>
+</ul>
 
 ### Current work
 

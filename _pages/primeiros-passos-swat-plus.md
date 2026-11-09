@@ -9,9 +9,12 @@ tags:
 toc: true
 toc_sticky: true
 lang: pt-BR
+permalink: /primeiros-passos-swat-plus/
+read_time: true
 ---
 
-*This post is also available [in English](/swat-plus-first-steps/).*
+**Tradução em português** do post [First steps with SWAT+](/swat-plus-first-steps/) (versão original em inglês).
+{: .notice--info}
 
 Em outubro de 2026 ministrei o minicurso **"Introdução ao SWAT+ para iniciantes"** na Semana
 Nacional de Ciência e Tecnologia (SNCT 2026) do IFBA, campus Vitória da Conquista: 8 horas, em

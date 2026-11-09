@@ -9,7 +9,8 @@ toc: true
 toc_sticky: true
 ---
 
-*Este post também está disponível [em português](/primeiros-passos-swat-plus/).*
+**Leia em português:** [Primeiros passos com o SWAT+](/primeiros-passos-swat-plus/)
+{: .notice--info}
 
 In October 2026 I taught the short course **"Introduction to SWAT+ for beginners"** at the
 National Science and Technology Week (SNCT 2026) of IFBA, Vitória da Conquista campus, Brazil:

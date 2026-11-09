@@ -608,7 +608,7 @@ American Geophysical Union
 ## Professional service
 
 `Ongoing`
-**Topic Editor**, Frontiers Research Topic *Watershed/landscape scale ecosystem services and Land Use for Sustainable Agricultural Food Production* (with J. M. Reichert). Handling editor of Kang, Q., Chen, Z., & Huang, C., *Frontiers in Forests and Global Change*, 2026. [Loop profile](https://loop.frontiersin.org/people/2909133/editorial).
+**Topic Editor**, Frontiers Research Topic *Watershed/landscape scale ecosystem services and Land Use for Sustainable Agricultural Food Production* (with J. M. Reichert). Handling editor of Kang, Q., Chen, Z., & Huang, C., *Frontiers in Forests and Global Change*, 2026.
 
 `2023`
 **Peer reviewer**, *Journal of South American Earth Sciences* (one manuscript).

@@ -19,8 +19,9 @@ read_time: true
 Nos dias 14 e 15 de outubro de 2026, das 8h às 12h, ministrei o minicurso **"Introdução ao
 SWAT+ para iniciantes"** na Semana Nacional de Ciência e Tecnologia (SNCT 2026) do IFBA, campus
 Vitória da Conquista: 8 horas, em duas manhãs, para estudantes e profissionais sem experiência prévia com o SWAT. Este texto
-reúne os pontos que mais ajudaram a turma. Ele não substitui a documentação oficial, mas indica o
-caminho e as dificuldades mais frequentes de quem está começando.
+reúne os principais pontos abordados no curso e dicas para continuar aprendendo depois dele. É um
+bom ponto de partida para quem está começando: indica o caminho e as dificuldades mais frequentes
+nos primeiros passos com o SWAT+.
 
 <figure>
   <img src="/assets/images/posts/swat-course-snct-2026.jpg" alt="Participantes do minicurso de SWAT+ no laboratório de geoprocessamento do IFBA, com o instrutor na tela de projeção">

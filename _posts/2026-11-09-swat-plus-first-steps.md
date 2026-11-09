@@ -15,8 +15,9 @@ toc_sticky: true
 On 14 and 15 October 2026 (08:00-12:00 each day) I taught the short course **"Introduction to
 SWAT+ for beginners"** at the National Science and Technology Week (SNCT 2026) of IFBA,
 Vitória da Conquista campus, Brazil: 8 hours over two mornings, for students and professionals who had never used SWAT. This post
-collects the points that helped participants most. It does not replace the documentation, but it
-shows the path and the most common stumbling blocks.
+brings together the main points covered in the course and tips for continued learning. It is a
+good starting point for beginners: it shows the path and the most common stumbling blocks in the
+first steps with SWAT+.
 
 <figure>
   <img src="/assets/images/posts/swat-course-snct-2026.jpg" alt="Participants of the SWAT+ short course in the IFBA GIS lab, with the instructor on the projection screen">

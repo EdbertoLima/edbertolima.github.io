@@ -12,6 +12,8 @@ I am a Senior Researcher at [BAW Research](https://www.baw.at/baw-research.html)
 
 My research looks at how land use, soil management and nature-based solutions shape the water balance, water quality and ecosystem services of agricultural and natural landscapes under climate change.
 
+[Online CV](/CV) | [Download CV (PDF)](/assets/files/Edberto_Moura_Lima_CV.pdf)
+
 ### Current work
 
 - **VeSchN - Reed evapotranspiration at Lake Neusiedl**: estimating evapotranspiration of the reed belt from Sentinel-2 imagery (OPTRAM-ET), comparing global ET products in Google Earth Engine, and evaluating satellite estimates against eddy covariance and lysimeter measurements.

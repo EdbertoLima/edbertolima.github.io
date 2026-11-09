@@ -140,50 +140,26 @@ author:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url: "https://gitlab.com/EdbertoLima"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:edberto.moura@gmail.com"
-    - label: "X"
-      icon: "fab fa-fw fa-x-twitter"
-      # url: "https://twitter.com/EdbertoM"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url: 
+    - label: "Bluesky"
+      icon: "fa-brands fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/edbertoml.bsky.social"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: "ORCID"
+      icon: "fa-brands fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-8447-8460"
+    - label: "Google Scholar"
+      icon: "fa-brands fa-fw fa-google-scholar"
+      url: "https://scholar.google.com/citations?user=rbwTqKIAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-    - label: "Linkedin"
-      icon: "ab fa-linkedin-in fa-2x"
-      #url: "https://www.linkedin.com/in/edbertolima/"
+      url: "https://github.com/EdbertoLima"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/edbertolima/"
 
 
 # Reading Files

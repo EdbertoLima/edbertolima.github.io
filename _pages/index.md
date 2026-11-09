@@ -13,7 +13,7 @@ PhD in Forest Engineering
 P.O. Box 68 (Pietari Kalmin katu 5)<br/>
 FI-00014 University of Helsinki, Finland<br/>
 -->
-<a href="mailto:edberto.mouralima@baw.at">edberto.mouralima@baw.at</a> - <a href="mailto:edberto.moura@gmail.com">edberto.moura@gmail.com</a> <i class="fa-solid fa-phone fa-2xs"></i> +43 681 1021 7046
+<a href="mailto:edberto.mouralima@baw.at">edberto.mouralima@baw.at</a> - <a href="mailto:edberto.moura@gmail.com">edberto.moura@gmail.com</a><br/><i class="fa-solid fa-phone fa-2xs"></i> +43 681 1021 7046
 
 
 <div id="webaddress">

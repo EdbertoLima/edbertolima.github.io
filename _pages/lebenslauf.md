@@ -167,6 +167,16 @@ LiDAR-Analyse von Vegetationsveränderungen in Feuchtgebieten im Umfeld der Öls
 `2023`
 **Cartas com Ciência**, Briefwechselprogramm zwischen Wissenschaftlerinnen und Wissenschaftlern und Schülerinnen und Schülern in portugiesischsprachigen Ländern.
 
+## Software
+
+`2026`
+**Rainfall Erosivity Monitor (REM)** ([GitHub](https://github.com/EdbertoLima/rainfall-erosivity-monitor))<br/>
+Python/Streamlit-Webanwendung zur Berechnung des Regenerosivitätsindex EI30 aus Daten der GeoSphere-Austria-Wetterstationen, mit Erkennung erosiver Starkregen, farbcodierten Erosionswarnungen und Empfehlungen für Feldbegehungen.
+
+`2026`
+**QField-Erosionskartierung (DWA-M 921)** ([GitHub](https://github.com/EdbertoLima/erosion-survey-qfield))<br/>
+Kartieranleitung und QGIS/QField-Projekt zur standardisierten Erfassung aktueller Erosionsformen durch Wasser nach dem Merkblatt DWA-M 921 (Deutsch und Englisch).
+
 ## Kenntnisse
 
 **Modellierung:** SWAT, APEX, InVEST; Wassermenge und Wasserqualität; Szenarien naturbasierter Lösungen<br/>

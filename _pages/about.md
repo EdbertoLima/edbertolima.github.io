@@ -21,6 +21,11 @@ My research looks at how land use, soil management and nature-based solutions sh
 - **[VeSchN](https://www.baw.at/baw-research/projekte/veschn.html) - Reed evapotranspiration at Lake Neusiedl** (2026-2028): a BAW Research and Forschung Burgenland project funded by the Austrian Federal Ministry (BMLUK) and the Land Burgenland. I contribute to the remote sensing component: estimating evapotranspiration of the reed belt from Sentinel-2 imagery (OPTRAM-ET), comparing global ET products in Google Earth Engine, and evaluating satellite estimates against field measurements.
 - **Topic Editor**, Frontiers Research Topic *Watershed/landscape scale ecosystem services and Land Use for Sustainable Agricultural Food Production*.
 
+### Software
+
+- **[Rainfall Erosivity Monitor](https://github.com/EdbertoLima/rainfall-erosivity-monitor)** (Python, Streamlit): web application that computes the EI30 rainfall erosivity index from GeoSphere Austria station data, detects erosive storms and issues colour-coded soil-erosion alerts with field survey recommendations.
+- **[QField erosion survey](https://github.com/EdbertoLima/erosion-survey-qfield)**: field guide and QGIS/QField project for mapping soil erosion by water following the DWA-M 921 guideline (German and English).
+
 ### Research interests
 
 - Remote sensing of evapotranspiration and wetland hydrology

@@ -165,6 +165,16 @@ LiDAR analysis of wetland vegetation change near oil sands disturbance.
 `2023`
 **Cartas com Ciência**, Programmes of letter exchanges between scientists and students in Portuguese-speaking countries.
 
+## Software
+
+`2026`
+**Rainfall Erosivity Monitor (REM)** ([GitHub](https://github.com/EdbertoLima/rainfall-erosivity-monitor))<br/>
+Python/Streamlit web application computing the EI30 rainfall erosivity index from GeoSphere Austria weather station data, with storm detection, colour-coded erosion alerts and field survey recommendations.
+
+`2026`
+**QField erosion survey (DWA-M 921)** ([GitHub](https://github.com/EdbertoLima/erosion-survey-qfield))<br/>
+Field guide and QGIS/QField project for standardised mapping of soil erosion by water following the DWA-M 921 guideline (German and English).
+
 ## Skills
 
 **Modelling:** SWAT, APEX, InVEST; water quantity and quality; nature-based solution scenarios<br/>

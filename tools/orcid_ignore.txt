@@ -1,0 +1,4 @@
+# DOIs on ORCID that are intentionally not in the CV (one per line, # starts a comment).
+10.2139/ssrn.4618919  # SSRN preprint of the 2024 Science of the Total Environment paper
+10.2139/ssrn.4618935  # SSRN preprint of the 2024 Science of the Total Environment paper
+10.5194/egusphere-egu24-18816  # EGU 2024 abstract, listed under conference abstracts

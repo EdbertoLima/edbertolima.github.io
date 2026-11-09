@@ -185,6 +185,7 @@ exclude:
   - staticman.yml
   - README.md
   - CHANGELOG.md
+  - tools
   - README
   - tmp
   - /docs # ignore Minimal Mistakes /docs

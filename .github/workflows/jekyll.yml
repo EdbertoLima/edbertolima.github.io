@@ -43,6 +43,19 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build CV PDFs
+        # Regenerated on every push so the downloads always match the online CV.
+        # Chrome is preinstalled on GitHub's Ubuntu runners.
+        run: |
+          pip install "markdown==3.10.3" "typer==0.27.2"
+          python tools/cv_pdf.py full --out assets/files/Edberto_Moura_Lima_CV.pdf
+          python tools/cv_pdf.py full --page _pages/lebenslauf.md \
+            --title "Edberto Moura Lima - Lebenslauf" \
+            --out assets/files/Edberto_Moura_Lima_Lebenslauf.pdf
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

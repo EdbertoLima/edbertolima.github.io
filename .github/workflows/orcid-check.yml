@@ -1,0 +1,38 @@
+name: Check ORCID for new publications
+
+on:
+  schedule:
+    - cron: "0 6 1 * *" # 06:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compare ORCID with the CV
+        run: |
+          pip install "typer==0.27.2"
+          python tools/check_orcid.py --report orcid-report.md
+      - name: Open or update the reminder issue
+        if: hashFiles('orcid-report.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="New publications on ORCID not in the CV"
+          number=$(gh issue list --state open --search "in:title \"$title\"" \
+            --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body-file orcid-report.md
+          else
+            gh issue create --title "$title" --body-file orcid-report.md
+          fi

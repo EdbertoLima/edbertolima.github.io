@@ -1,13 +1,13 @@
 ---
 ---
 <!doctype html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }}{% else %}CV{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
-  <meta property="og:title" content="CV - {{ site.author.name }}">
+  <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:image" content="{{ '/assets/images/avatar.jpg' | absolute_url }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
@@ -20,8 +20,15 @@
     <div class="cv-nav-inner">
       <a class="cv-nav-title" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
       <span class="cv-nav-links">
+        {% if page.lang == 'de' %}
+        <a href="{{ '/lebenslauf' | relative_url }}">Lebenslauf</a>
+        <a href="{{ '/assets/files/Edberto_Moura_Lima_Lebenslauf.pdf' | relative_url }}">PDF</a>
+        <a href="{{ '/CV' | relative_url }}" hreflang="en">EN</a>
+        {% else %}
         <a href="{{ '/CV' | relative_url }}">CV</a>
         <a href="{{ '/assets/files/Edberto_Moura_Lima_CV.pdf' | relative_url }}">PDF</a>
+        <a href="{{ '/lebenslauf' | relative_url }}" hreflang="de">DE</a>
+        {% endif %}
       </span>
     </div>
   </nav>

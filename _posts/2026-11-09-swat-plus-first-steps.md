@@ -96,12 +96,12 @@ Half an hour of checking here saves hours later:
 - [ ] DEM, land use and soil maps share the same projected coordinate system
 - [ ] The DEM's vertical unit is metres
 - [ ] Land use and soil cover the whole watershed, with no *NoData* holes
-- [ ] Every land-use raster value exists in the land-use lookup table
+- [ ] Every land-use raster value has a row in the land-use lookup table; an unknown class
+      stops the work instead of defaulting to pasture
 - [ ] Every soil raster value exists in the soil lookup table, and every soil exists in *usersoil*
 - [ ] The outlet lies on (or within 300 m of) the generated drainage network
 - [ ] The climate record covers the simulation period plus the warm-up years
 - [ ] Station coordinates are in decimal degrees, negative for South and West
-- [ ] Every land-use raster value has a lookup row; an unknown class stops the work, it does not default to pasture
 - [ ] A reused example project does not carry a leftover `calibration.cal`
 
 ## The workflow in six steps
@@ -172,30 +172,56 @@ RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing 
   (Norway), from input data and model setup to management, model verification, soft and hard
   calibration, and land-use, climate and measure scenarios. It is a work in progress, but an
   excellent guide to the steps that come after your first model.
-- **The OPTAIN project:** [project website](https://www.optain.eu/) and [Zenodo community](https://zenodo.org/communities/optain-h2020-project/), with
-  protocols, reports and data. Its modelling protocols (e.g. Farkas et al., 2023) show how to
-  document a modelling study.
-- **R packages from the OPTAIN workflow:** [SWATprepR](https://biopsichas.github.io/SWATprepR/) (input data preparation),
-  [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (management schedules) and [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (running SWAT+ from R, formerly
-  SWATplusR). SWATbuildR and SWATdoctR are also part of the workflow, with restricted access.
-- **OPTAIN protocols:** the [SWAT+ modelling protocol](https://doi.org/10.5281/zenodo.7463395) used in 14 European agricultural catchments (Schürz et al., 2022), the [common optimisation protocol](https://doi.org/10.5281/zenodo.11473793) for retention measures (Strauch & Schürz, 2024), and an [R workflow to generate SWATfarmR input](https://doi.org/10.5281/zenodo.17531016) from field-scale crop rotations (Strauch, 2025).
+- **The OPTAIN project:** [project website](https://www.optain.eu/) and
+  [Zenodo community](https://zenodo.org/communities/optain-h2020-project/), with protocols,
+  reports and data. Highlights: the
+  [SWAT+ modelling protocol](https://doi.org/10.5281/zenodo.7463395) applied in 14 European
+  agricultural catchments (Schürz et al., 2022), the
+  [common optimisation protocol](https://doi.org/10.5281/zenodo.11473793) for water and nutrient
+  retention measures (Strauch & Schürz, 2024) and the field-scale SWAP modelling protocol
+  (Farkas et al., 2023): good examples of how to document a modelling study.
+- **R packages from the OPTAIN workflow:** [SWATprepR](https://biopsichas.github.io/SWATprepR/)
+  (input data preparation), [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (management
+  schedules) and [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (running and calibrating
+  SWAT+ from R; formerly SWATplusR). There is also an
+  [R workflow to generate SWATfarmR input](https://doi.org/10.5281/zenodo.17531016) from
+  field-scale crop rotations (Strauch, 2025). SWATbuildR and SWATdoctR are part of the workflow
+  too, with restricted access.
 - **Calibrating crops, not just streamflow:** [Piniewski et al. (2026)](https://doi.org/10.1016/j.envsoft.2025.106794) show a crop growth and yield calibration workflow for SWAT+ and its effect on water, sediment and nutrient results in ten catchments.
 
 ## References
 
 - Arnold, J. G., Čerkasova, N., White, M., et al. *Soil and Water Assessment Tool Plus (SWAT+)*.
   Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
+- Chagas, V. B. M., et al. (2020). CAMELS-BR: hydrometeorological time series and landscape
+  attributes for 897 catchments in Brazil. *Earth System Science Data, 12*(3), 2075-2096.
+  [doi:10.5194/essd-12-2075-2020](https://doi.org/10.5194/essd-12-2075-2020)
 - Farkas, C., Shore, M., Cüceloglu, G., Czelnai, L., Nemes, A., Szabó, B., Čerkasova, N.,
   Idzelyté, R., & Weiland, S. (2023). *SWAP field-scale modelling protocol*. OPTAIN project
   deliverable. Zenodo. [doi:10.5281/zenodo.7907114](https://doi.org/10.5281/zenodo.7907114)
-- Gupta, H. V., Kling, H., Yilmaz, K. K., & Martinez, G. F. (2009). Decomposition of the mean squared error and NSE performance criteria: implications for improving hydrological modelling. *Journal of Hydrology, 377*(1-2), 80-91. [doi:10.1016/j.jhydrol.2009.08.003](https://doi.org/10.1016/j.jhydrol.2009.08.003)
+- Gupta, H. V., Kling, H., Yilmaz, K. K., & Martinez, G. F. (2009). Decomposition of the mean
+  squared error and NSE performance criteria: implications for improving hydrological modelling.
+  *Journal of Hydrology, 377*(1-2), 80-91.
+  [doi:10.1016/j.jhydrol.2009.08.003](https://doi.org/10.1016/j.jhydrol.2009.08.003)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.
   [doi:10.13031/2013.23153](https://doi.org/10.13031/2013.23153)
 - Neitsch, S. L., Arnold, J. G., Kiniry, J. R., & Williams, J. R. (2011). *Soil and Water
   Assessment Tool Theoretical Documentation, Version 2009*. Texas A&M University.
-- Schürz, C., Čerkasova, N., Farkas, C., Nemes, A., Plunge, S., Strauch, M., Szabó, B., & Piniewski, M. (2022). *SWAT+ modeling protocol for the assessment of water and nutrient retention measures in small agricultural catchments*. OPTAIN project deliverable. Zenodo. [doi:10.5281/zenodo.7463395](https://doi.org/10.5281/zenodo.7463395)
-- Strauch, M., & Schürz, C. (2024). *Common optimisation protocol*. Deliverable D5.1 of the EU Horizon 2020 project OPTAIN. Zenodo. [doi:10.5281/zenodo.11473793](https://doi.org/10.5281/zenodo.11473793)
-- Piniewski, M., Čerkasova, N., Plunge, S., Strauch, M., Schürz, C., et al. (2026). Enhanced crop calibration for SWAT+: evaluating water, sediment and nutrient impacts across ten European catchments. *Environmental Modelling & Software, 196*, 106794. [doi:10.1016/j.envsoft.2025.106794](https://doi.org/10.1016/j.envsoft.2025.106794)
-- Strauch, M. (2025). *R workflow to generate SWATfarmR input* (v1.0) [Software]. Zenodo. [doi:10.5281/zenodo.17531016](https://doi.org/10.5281/zenodo.17531016)
+- Piniewski, M., Čerkasova, N., Plunge, S., Strauch, M., Schürz, C., et al. (2026). Enhanced crop
+  calibration for SWAT+: evaluating water, sediment and nutrient impacts across ten European
+  catchments. *Environmental Modelling & Software, 196*, 106794.
+  [doi:10.1016/j.envsoft.2025.106794](https://doi.org/10.1016/j.envsoft.2025.106794)
+- Schürz, C., Čerkasova, N., Farkas, C., Nemes, A., Plunge, S., Strauch, M., Szabó, B., &
+  Piniewski, M. (2022). *SWAT+ modeling protocol for the assessment of water and nutrient
+  retention measures in small agricultural catchments*. OPTAIN project deliverable. Zenodo.
+  [doi:10.5281/zenodo.7463395](https://doi.org/10.5281/zenodo.7463395)
+- Strauch, M. (2025). *R workflow to generate SWATfarmR input* (v1.0) [Software]. Zenodo.
+  [doi:10.5281/zenodo.17531016](https://doi.org/10.5281/zenodo.17531016)
+- Strauch, M., & Schürz, C. (2024). *Common optimisation protocol*. Deliverable D5.1 of the EU
+  Horizon 2020 project OPTAIN. Zenodo.
+  [doi:10.5281/zenodo.11473793](https://doi.org/10.5281/zenodo.11473793)
+- Xavier, A. C., Scanlon, B. R., King, C. W., & Alves, A. I. (2022). New improved Brazilian daily
+  weather gridded data (1961-2020). *International Journal of Climatology, 42*(16), 8390-8404.
+  [doi:10.1002/joc.7731](https://doi.org/10.1002/joc.7731)

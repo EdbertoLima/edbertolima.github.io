@@ -156,7 +156,7 @@ Only then comes calibration: first **soft calibration** (matching the water-bala
 regional values), then **hard calibration** against observed streamflow, and finally
 **validation** on an independent period. As a reference for monthly streamflow,
 [Moriasi et al. (2007)](https://doi.org/10.13031/2013.23153) consider NSE > 0.50, |PBIAS| < 25% and
-RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing runs, not as proof that a model is fit for purpose. NSE and [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) are dominated by high flows, so also check hydrological signatures: the flow duration curve, Q95, the baseflow index and the monthly regime.
+RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing runs, not as proof that a model is fit for purpose. NSE and [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) are dominated by high flows, so calibrate crop growth and evapotranspiration before streamflow ([Piniewski et al., 2026](https://doi.org/10.1016/j.envsoft.2025.106794)), and also check hydrological signatures: the flow duration curve, Q95, the baseflow index and the monthly regime.
 
 ## Keep learning
 
@@ -178,6 +178,8 @@ RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing 
 - **R packages from the OPTAIN workflow:** [SWATprepR](https://biopsichas.github.io/SWATprepR/) (input data preparation),
   [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (management schedules) and [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (running SWAT+ from R, formerly
   SWATplusR). SWATbuildR and SWATdoctR are also part of the workflow, with restricted access.
+- **OPTAIN protocols:** the [SWAT+ modelling protocol](https://doi.org/10.5281/zenodo.7463395) used in 14 European agricultural catchments (Schürz et al., 2022), the [common optimisation protocol](https://doi.org/10.5281/zenodo.11473793) for retention measures (Strauch & Schürz, 2024), and an [R workflow to generate SWATfarmR input](https://doi.org/10.5281/zenodo.17531016) from field-scale crop rotations (Strauch, 2025).
+- **Calibrating crops, not just streamflow:** [Piniewski et al. (2026)](https://doi.org/10.1016/j.envsoft.2025.106794) show a crop growth and yield calibration workflow for SWAT+ and its effect on water, sediment and nutrient results in ten catchments.
 
 ## References
 
@@ -193,3 +195,7 @@ RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing 
   [doi:10.13031/2013.23153](https://doi.org/10.13031/2013.23153)
 - Neitsch, S. L., Arnold, J. G., Kiniry, J. R., & Williams, J. R. (2011). *Soil and Water
   Assessment Tool Theoretical Documentation, Version 2009*. Texas A&M University.
+- Schürz, C., Čerkasova, N., Farkas, C., Nemes, A., Plunge, S., Strauch, M., Szabó, B., & Piniewski, M. (2022). *SWAT+ modeling protocol for the assessment of water and nutrient retention measures in small agricultural catchments*. OPTAIN project deliverable. Zenodo. [doi:10.5281/zenodo.7463395](https://doi.org/10.5281/zenodo.7463395)
+- Strauch, M., & Schürz, C. (2024). *Common optimisation protocol*. Deliverable D5.1 of the EU Horizon 2020 project OPTAIN. Zenodo. [doi:10.5281/zenodo.11473793](https://doi.org/10.5281/zenodo.11473793)
+- Piniewski, M., Čerkasova, N., Plunge, S., Strauch, M., Schürz, C., et al. (2026). Enhanced crop calibration for SWAT+: evaluating water, sediment and nutrient impacts across ten European catchments. *Environmental Modelling & Software, 196*, 106794. [doi:10.1016/j.envsoft.2025.106794](https://doi.org/10.1016/j.envsoft.2025.106794)
+- Strauch, M. (2025). *R workflow to generate SWATfarmR input* (v1.0) [Software]. Zenodo. [doi:10.5281/zenodo.17531016](https://doi.org/10.5281/zenodo.17531016)

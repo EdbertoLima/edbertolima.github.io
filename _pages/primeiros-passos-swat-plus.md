@@ -164,7 +164,7 @@ Só depois vem a calibração: primeiro a **calibração suave** (ajustar as fra
 hídrico a valores regionais), depois a **calibração rígida** com a vazão observada, e por fim a
 **validação** num período independente. Como referência para vazão mensal,
 [Moriasi et al. (2007)](https://doi.org/10.13031/2013.23153) consideram satisfatórios NSE > 0,50,
-|PBIAS| < 25% e RSR ≤ 0,70. Trate esses limiares como uma convenção para comparar rodadas, não como prova de que o modelo serve ao seu objetivo. O NSE e o [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) são dominados pelas vazões altas; confira também assinaturas hidrológicas: curva de permanência, Q95, índice de vazão de base e regime mensal.
+|PBIAS| < 25% e RSR ≤ 0,70. Trate esses limiares como uma convenção para comparar rodadas, não como prova de que o modelo serve ao seu objetivo. O NSE e o [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) são dominados pelas vazões altas; calibre o crescimento das culturas e a evapotranspiração antes da vazão ([Piniewski et al., 2026](https://doi.org/10.1016/j.envsoft.2025.106794)) e confira também assinaturas hidrológicas: curva de permanência, Q95, índice de vazão de base e regime mensal.
 
 ## Para continuar aprendendo
 
@@ -186,6 +186,8 @@ hídrico a valores regionais), depois a **calibração rígida** com a vazão ob
 - **Pacotes R do fluxo OPTAIN:** [SWATprepR](https://biopsichas.github.io/SWATprepR/) (preparação dos dados de entrada),
   [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (calendários de manejo) e [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (rodar o SWAT+ a partir do R, antigo
   SWATplusR). O SWATbuildR e o SWATdoctR também fazem parte do fluxo, com acesso restrito.
+- **Protocolos do OPTAIN:** o [protocolo de modelagem com SWAT+](https://doi.org/10.5281/zenodo.7463395) usado em 14 bacias agrícolas europeias (Schürz et al., 2022), o [protocolo comum de otimização](https://doi.org/10.5281/zenodo.11473793) de medidas de retenção (Strauch e Schürz, 2024) e um [fluxo em R para gerar a entrada do SWATfarmR](https://doi.org/10.5281/zenodo.17531016) a partir de rotações de culturas por talhão (Strauch, 2025).
+- **Calibrar as culturas, não só a vazão:** [Piniewski et al. (2026)](https://doi.org/10.1016/j.envsoft.2025.106794) apresentam um fluxo de calibração do crescimento e da produtividade das culturas no SWAT+ e seu efeito sobre água, sedimentos e nutrientes em dez bacias.
 
 ## Referências
 
@@ -201,3 +203,7 @@ hídrico a valores regionais), depois a **calibração rígida** com a vazão ob
   [doi:10.13031/2013.23153](https://doi.org/10.13031/2013.23153)
 - Neitsch, S. L., Arnold, J. G., Kiniry, J. R., & Williams, J. R. (2011). *Soil and Water
   Assessment Tool Theoretical Documentation, Version 2009*. Texas A&M University.
+- Schürz, C., Čerkasova, N., Farkas, C., Nemes, A., Plunge, S., Strauch, M., Szabó, B., & Piniewski, M. (2022). *SWAT+ modeling protocol for the assessment of water and nutrient retention measures in small agricultural catchments*. OPTAIN project deliverable. Zenodo. [doi:10.5281/zenodo.7463395](https://doi.org/10.5281/zenodo.7463395)
+- Strauch, M., & Schürz, C. (2024). *Common optimisation protocol*. Deliverable D5.1 of the EU Horizon 2020 project OPTAIN. Zenodo. [doi:10.5281/zenodo.11473793](https://doi.org/10.5281/zenodo.11473793)
+- Piniewski, M., Čerkasova, N., Plunge, S., Strauch, M., Schürz, C., et al. (2026). Enhanced crop calibration for SWAT+: evaluating water, sediment and nutrient impacts across ten European catchments. *Environmental Modelling & Software, 196*, 106794. [doi:10.1016/j.envsoft.2025.106794](https://doi.org/10.1016/j.envsoft.2025.106794)
+- Strauch, M. (2025). *R workflow to generate SWATfarmR input* (v1.0) [Software]. Zenodo. [doi:10.5281/zenodo.17531016](https://doi.org/10.5281/zenodo.17531016)

@@ -55,6 +55,10 @@ Senior Researcher, BAW Research
 **VeSchN - Quantifying evapotranspiration of reed at Lake Neusiedl** <br/> *BAW Research* with Forschung Burgenland GmbH, Austria. Funded by the Austrian Federal Ministry (BMLUK) and the Land Burgenland.<br/>
 Quantifying how much the reed belt contributes to the lake's total evapotranspiration, and how reed vitality, reed management, and hydrological and meteorological conditions influence it. Contributing to the remote sensing component: satellite-based ET estimation (Sentinel-2, 2016-2026) and upscaling of field measurements to the whole reed belt. The results support decisions on reed management and regional water management.
 
+`2022-2024`
+**SoilX - Climate-smart soil management against weather extremes (EJP SOIL)** <br/> *BOKU University*, Vienna, Austria. European Joint Programme EJP SOIL, EU Horizon 2020 (grant 862695).<br/>
+Mitigating the impacts of drought and heavy precipitation on crop productivity through soil and crop management, combining long-term field experiments along a European gradient, an ensemble of agro-hydrological models and socio-economic interviews. Contributed to the agro-hydrological model ensemble simulations.
+
 `2020-2022`
 **GIS Team Leader, Restaura PAMPA project** <br/> *Universidade Federal de Santa Maria*, RS, Brazil.<br/>
 Land use and cover mapping with Google Earth Engine for conservation units; identification of areas for protection and restoration.

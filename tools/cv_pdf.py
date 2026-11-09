@@ -175,7 +175,7 @@ data.
 
 POSTDOC_DUTIES = """
 
-- \\- Managed work-package activities of an EU-funded project.
+- \\- Managed work-package activities in the EU-funded EJP SOIL project SoilX.
 - \\- Implemented soil management modelling to mitigate climate change impacts; assessed crop \
 growth, nutrient loss and carbon storage.
 - \\- Developed a framework to incorporate nature-based solutions and land-use dynamics \

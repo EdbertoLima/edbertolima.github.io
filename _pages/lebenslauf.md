@@ -57,6 +57,10 @@ Senior Researcher, BAW Research
 **VeSchN - Verdunstung des Schilfgürtels Neusiedler See** <br/> *BAW Research* mit der Forschung Burgenland GmbH, Österreich. Gefördert vom Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft (BMLUK) und dem Land Burgenland.<br/>
 Quantifizierung des Beitrags des Schilfgürtels zur Gesamtverdunstung des Sees sowie des Einflusses von Schilfvitalität, Schilfmanagement und hydrologischen und meteorologischen Bedingungen. Mitarbeit an der Fernerkundungskomponente: satellitengestützte Verdunstungsschätzung (Sentinel-2, 2016-2026) und Hochskalierung der Feldmessungen auf den gesamten Schilfgürtel. Die Ergebnisse dienen als Entscheidungsgrundlage für das Schilfmanagement und die regionale Wasserwirtschaft.
 
+`2022-2024`
+**SoilX - Klimaangepasstes Bodenmanagement gegen Wetterextreme (EJP SOIL)** <br/> *Universität für Bodenkultur Wien (BOKU)*, Wien, Österreich. European Joint Programme EJP SOIL, EU Horizon 2020 (Grant 862695).<br/>
+Minderung der Auswirkungen von Dürre und Starkniederschlag auf die Erträge durch Boden- und Bewirtschaftungsmaßnahmen, mit Langzeitfeldversuchen entlang eines europäischen Gradienten, einem Ensemble agrohydrologischer Modelle und sozioökonomischen Interviews. Mitarbeit an den Simulationen des agrohydrologischen Modellensembles.
+
 `2020-2022`
 **GIS-Teamleiter, Projekt Restaura PAMPA** <br/> *Universidade Federal de Santa Maria*, RS, Brasilien.<br/>
 Kartierung von Landnutzung und Landbedeckung mit Google Earth Engine für Schutzgebiete; Identifikation von Flächen für Schutz und Renaturierung.

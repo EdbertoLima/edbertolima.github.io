@@ -1,3 +1,6 @@
+`2026`
+Tadić, L., Janjić, J., & **Lima, E. M.** Assessing climate change impacts on low-flow extremes in a small catchment in Croatia using the SWAT model. *5th International Congress on Earth and Geological Sciences, Vienna, Austria*, 23-24 July 2026. [DOI](https://doi.org/10.51219/URForum.2026.Josip-Janjic)
+
 `2024`
 **Lima, E. M.**, Böning, K., and Mehdi-Schulz, B. Comparative analysis of two tillage systems and their implications for soil hydrology, carbon dynamics, and nitrogen cycling in a changing climate. *SWAT Conference, Lima, Peru*.
 

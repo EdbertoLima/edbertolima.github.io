@@ -66,7 +66,7 @@ def load_page(page: Path) -> str:
     return INCLUDE_RE.sub(include, text)
 
 
-def to_html(src: str, title: str) -> str:
+def to_html(src: str, title: str, extra_css: str = "") -> str:
     """Convert CV markdown to a standalone HTML document styled for print."""
     # The web page collapses conference abstracts; the PDF shows them all.
     src = re.sub(
@@ -93,7 +93,7 @@ def to_html(src: str, title: str) -> str:
 <title>{title}</title>
 <link rel="stylesheet" href="{FA_CSS}">
 <style>{screen_css}</style>
-<style>{PRINT_CSS}</style>
+<style>{PRINT_CSS}{extra_css}</style>
 </head><body><div id="main"><div id="content">
 {body}
 </div></div></body></html>
@@ -329,7 +329,9 @@ def scientific(
 ) -> None:
     """Condensed scientific CV with profile and job duties."""
     md = make_scientific(load_page(REPO / "_pages" / "index.md"), phone)
-    print_pdf(to_html(md, "Edberto Moura Lima - Scientific CV"), out, find_chrome(chrome))
+    # Slightly tighter section spacing keeps the application CV short.
+    html = to_html(md, "Edberto Moura Lima - Scientific CV", extra_css="h2 { margin-top: 1.1em; }")
+    print_pdf(html, out, find_chrome(chrome))
 
 
 if __name__ == "__main__":

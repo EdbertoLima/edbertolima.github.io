@@ -12,6 +12,7 @@ My research looks at how land use, soil management and nature-based solutions sh
 ### News
 
 - **Oct 2026** - New first-author paper in *Frontiers in Sustainable Food Systems* on natural ecosystem loss and land-use change in an Atlantic Forest agricultural basin. [DOI](https://doi.org/10.3389/fsufs.2026.1912707)
+- **Jul 2026** - Co-authored study on climate change impacts on low-flow extremes in a Croatian catchment (SWAT model), presented at the 5th International Congress on Earth and Geological Sciences, Vienna. [DOI](https://doi.org/10.51219/URForum.2026.Josip-Janjic)
 - **Jun 2026** - First meeting of the VeSchN advisory board at the Burgenland water management office.
 - **May 2026** - Paper in the *European Journal of Soil Science* on climate impacts and no-till for winter wheat across Europe. [DOI](https://doi.org/10.1111/ejss.70363)
 - **Apr 2026** - VeSchN project kick-off at the Biological Station Illmitz, Lake Neusiedl.

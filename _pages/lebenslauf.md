@@ -83,7 +83,7 @@ LiDAR-Analyse von Vegetationsveränderungen in Feuchtgebieten im Umfeld der Öls
 ### Tagungsbeiträge (Abstracts)
 
 <details markdown="1">
-<summary>Alle Tagungsbeiträge anzeigen (18)</summary>
+<summary>Alle Tagungsbeiträge anzeigen (19)</summary>
 
 {% include cv/proceedings.md %}
 

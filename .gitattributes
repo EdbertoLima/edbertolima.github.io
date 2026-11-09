@@ -1,0 +1,4 @@
+# Theme scripts and third-party code: keep them out of GitHub's language statistics
+assets/js/** linguist-vendored
+_sass/minimal-mistakes/vendor/** linguist-vendored
+assets/fonts/** linguist-vendored

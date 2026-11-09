@@ -12,9 +12,9 @@ toc_sticky: true
 **Leia em português:** [Primeiros passos com o SWAT+](/primeiros-passos-swat-plus/)
 {: .notice--info}
 
-In October 2026 I taught the short course **"Introduction to SWAT+ for beginners"** at the
-National Science and Technology Week (SNCT 2026) of IFBA, Vitória da Conquista campus, Brazil:
-8 hours over two days, for students and professionals who had never used SWAT. This post
+On 14 and 15 October 2026 (08:00-12:00 each day) I taught the short course **"Introduction to
+SWAT+ for beginners"** at the National Science and Technology Week (SNCT 2026) of IFBA,
+Vitória da Conquista campus, Brazil: 8 hours over two mornings, for students and professionals who had never used SWAT. This post
 collects the points that helped participants most. It does not replace the documentation, but it
 shows the path and the most common stumbling blocks.
 
@@ -66,11 +66,16 @@ A basic model needs five datasets, **all in the same metric projection**:
 
 | Data | Purpose | Example sources (Brazil) |
 | --- | --- | --- |
-| Digital elevation model | Drainage, subbasins, slope | SRTM 30 m, Copernicus GLO-30, ANADEM (ANA), TOPODATA (INPE) |
+| Digital elevation model | Drainage, subbasins, slope | [ANADEM](https://doi.org/10.3390/rs16132321), Copernicus GLO-30, SRTM 30 m, TOPODATA (INPE) |
 | Land use and land cover | Plants, Curve Number and management for each HRU | [MapBiomas](https://brasil.mapbiomas.org/) (annual collections, 30 m) |
 | Soils | Layers, texture, available water, conductivity | IBGE and Embrapa maps; SoilGrids to fill in properties |
 | Daily climate | Precipitation, temperature, radiation, humidity, wind | INMET (BDMEP), ANA Hidroweb, BR-DWGD grid, CHIRPS, ERA5 |
 | Observed streamflow | Evaluation, calibration and validation | ANA Hidroweb / SNIRH |
+
+For delineation, prefer a **terrain model** such as ANADEM
+([Laipelt et al., 2024](https://doi.org/10.3390/rs16132321)), which removes the vegetation bias of Copernicus GLO-30:
+surface models such as SRTM and Copernicus include canopy height, which can shift the drainage
+network in forested areas.
 
 In practice, the hardest dataset is almost always the **soil property table** (*usersoil*):
 depth, bulk density, available water and conductivity for every layer.
@@ -203,6 +208,9 @@ RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing 
   squared error and NSE performance criteria: implications for improving hydrological modelling.
   *Journal of Hydrology, 377*(1-2), 80-91.
   [doi:10.1016/j.jhydrol.2009.08.003](https://doi.org/10.1016/j.jhydrol.2009.08.003)
+- Laipelt, L., Comini de Andrade, B., Collischonn, W., de Amorim Teixeira, A., Paiva, R. C. D.,
+  & Ruhoff, A. (2024). ANADEM: A digital terrain model for South America. *Remote Sensing,
+  16*(13), 2321. [doi:10.3390/rs16132321](https://doi.org/10.3390/rs16132321)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.

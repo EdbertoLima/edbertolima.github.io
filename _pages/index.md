@@ -149,7 +149,7 @@ LiDAR analysis of wetland vegetation change near oil sands disturbance.
 ### Short courses
 
 `2026`
-**Introduction to SWAT+ for beginners** (8 h, instructor), *SNCT 2026 - National Science and Technology Week, IFBA Campus Vitória da Conquista*, BA, Brazil.
+**Introduction to SWAT+ for beginners** (8 h, 14-15 October 2026, instructor), *SNCT 2026 - National Science and Technology Week, IFBA Campus Vitória da Conquista*, BA, Brazil.
 
 ### Teaching Assistant
 `2019-2020`

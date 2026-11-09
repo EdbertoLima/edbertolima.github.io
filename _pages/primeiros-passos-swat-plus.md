@@ -16,9 +16,9 @@ read_time: true
 **Versão em português** do post [First steps with SWAT+](/swat-plus-first-steps/) (original em inglês).
 {: .notice--info}
 
-Em outubro de 2026 ministrei o minicurso **"Introdução ao SWAT+ para iniciantes"** na Semana
-Nacional de Ciência e Tecnologia (SNCT 2026) do IFBA, campus Vitória da Conquista: 8 horas, em
-dois encontros, para estudantes e profissionais sem experiência prévia com o SWAT. Este texto
+Nos dias 14 e 15 de outubro de 2026, das 8h às 12h, ministrei o minicurso **"Introdução ao
+SWAT+ para iniciantes"** na Semana Nacional de Ciência e Tecnologia (SNCT 2026) do IFBA, campus
+Vitória da Conquista: 8 horas, em duas manhãs, para estudantes e profissionais sem experiência prévia com o SWAT. Este texto
 reúne os pontos que mais ajudaram a turma. Ele não substitui a documentação oficial, mas indica o
 caminho e as dificuldades mais frequentes de quem está começando.
 
@@ -79,11 +79,16 @@ projetado (em metros)**:
 
 | Dado | Finalidade | Fontes para o Brasil |
 | --- | --- | --- |
-| Modelo digital de elevação (MDE) | Rede de drenagem, sub-bacias e declividade | SRTM 30 m, Copernicus GLO-30, ANADEM (ANA), TOPODATA (INPE) |
+| Modelo digital de elevação (MDE) | Rede de drenagem, sub-bacias e declividade | [ANADEM](https://doi.org/10.3390/rs16132321), Copernicus GLO-30, SRTM 30 m, TOPODATA (INPE) |
 | Uso e cobertura da terra | Tipo de vegetação, Curva-Número (CN) e manejo de cada HRU | [MapBiomas](https://brasil.mapbiomas.org/) (coleções anuais, 30 m) |
 | Solos | Camadas, textura, água disponível, condutividade hidráulica | Mapas pedológicos do IBGE e da Embrapa; SoilGrids para complementar propriedades |
 | Clima diário | Precipitação, temperatura, radiação solar, umidade relativa e vento | INMET (BDMEP), Hidroweb (ANA), grade BR-DWGD, CHIRPS, ERA5 |
 | Vazão observada | Avaliação, calibração e validação | Hidroweb / SNIRH (ANA) |
+
+Para a delimitação da bacia, prefira um **modelo digital de terreno** como o ANADEM
+([Laipelt et al., 2024](https://doi.org/10.3390/rs16132321)), que remove o viés da vegetação do Copernicus GLO-30: modelos
+de superfície, como o SRTM e o Copernicus, incluem a altura do dossel, o que pode deslocar a rede
+de drenagem em áreas florestadas.
 
 Na prática, o dado mais difícil de montar é quase sempre a **tabela de atributos dos solos**
 (*usersoil*): profundidade, densidade do solo, água disponível e condutividade hidráulica saturada
@@ -253,6 +258,9 @@ mensal.
   squared error and NSE performance criteria: implications for improving hydrological modelling.
   *Journal of Hydrology, 377*(1-2), 80-91.
   [doi:10.1016/j.jhydrol.2009.08.003](https://doi.org/10.1016/j.jhydrol.2009.08.003)
+- Laipelt, L., Comini de Andrade, B., Collischonn, W., de Amorim Teixeira, A., Paiva, R. C. D.,
+  & Ruhoff, A. (2024). ANADEM: A digital terrain model for South America. *Remote Sensing,
+  16*(13), 2321. [doi:10.3390/rs16132321](https://doi.org/10.3390/rs16132321)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.

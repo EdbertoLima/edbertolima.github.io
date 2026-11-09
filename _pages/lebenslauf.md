@@ -175,6 +175,7 @@ Python/Streamlit-Webanwendung zur Berechnung des Regenerosivitätsindex EI30 aus
 
 `2026`
 **QField-Erosionskartierung (DWA-M 921)** ([GitHub](https://github.com/EdbertoLima/erosion-survey-qfield))<br/>
+**Lima, E. M.**, Liebhard, G., Brunner, T., & Strauss, P. *QField Manual: DWA-M-921 Erosion Survey*. Zenodo. [DOI](https://doi.org/10.5281/zenodo.18403752)<br/>
 Kartieranleitung und QGIS/QField-Projekt zur standardisierten Erfassung aktueller Erosionsformen durch Wasser nach dem Merkblatt DWA-M 921 (Deutsch und Englisch).
 
 ## Kenntnisse

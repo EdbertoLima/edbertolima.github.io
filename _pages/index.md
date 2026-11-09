@@ -173,6 +173,7 @@ Python/Streamlit web application computing the EI30 rainfall erosivity index fro
 
 `2026`
 **QField erosion survey (DWA-M 921)** ([GitHub](https://github.com/EdbertoLima/erosion-survey-qfield))<br/>
+**Lima, E. M.**, Liebhard, G., Brunner, T., & Strauss, P. *QField Manual: DWA-M-921 Erosion Survey*. Zenodo. [DOI](https://doi.org/10.5281/zenodo.18403752)<br/>
 Field guide and QGIS/QField project for standardised mapping of soil erosion by water following the DWA-M 921 guideline (German and English).
 
 ## Skills

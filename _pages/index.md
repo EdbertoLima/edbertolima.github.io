@@ -607,10 +607,8 @@ American Geophysical Union
 
 ## Professional service
 
-`2023-present`
-**Referee**.
-
-**Journals**: *Journal of South American Earth Sciences*
+`2023`
+**Peer reviewer**, *Journal of South American Earth Sciences* (one manuscript).
 
 ## Volunteering
 

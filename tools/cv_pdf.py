@@ -231,6 +231,11 @@ def make_scientific(md: str, phone: str | None) -> str:
     md = cut(md, "### Other Publications", "## Grants and Scholarships")
     md = cut(md, "`2008`\n**6th Place**", "## Conference activity")
     md = cut(md, "`2013`", "## Teaching", after="### Presentations")
+    # Scholarships: keep the titles, drop the detail lines ("- **Host Institution:** ...").
+    start = md.index("## Grants and Scholarships")
+    end = md.index("## Awards and honors", start)
+    grants = re.sub(r"^- \*\*.*\n", "", md[start:end], flags=re.MULTILINE)
+    md = md[:start] + grants + md[end:]
 
     md = replace_once(md, "## Education \n", PROFILE)
     md = replace_once(

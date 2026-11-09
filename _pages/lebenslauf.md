@@ -148,6 +148,11 @@ LiDAR-Analyse von Vegetationsveränderungen in Feuchtgebieten im Umfeld der Öls
 
 ## Lehre
 
+### Kurse
+
+`2026`
+**Einführung in SWAT+ für Einsteiger** (8 h, Kursleiter), *SNCT 2026 - Nationale Woche für Wissenschaft und Technologie, IFBA Campus Vitória da Conquista*, BA, Brasilien.
+
 ### Studienassistenz
 `2019-2020`
 **Bodenphysik**, *Departamento de Solos, Universidade Federal de Santa Maria*, RS, Brasilien.

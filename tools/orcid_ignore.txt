@@ -2,3 +2,4 @@
 10.2139/ssrn.4618919  # SSRN preprint of the 2024 Science of the Total Environment paper
 10.2139/ssrn.4618935  # SSRN preprint of the 2024 Science of the Total Environment paper
 10.5194/egusphere-egu24-18816  # EGU 2024 abstract, listed under conference abstracts
+10.5281/zenodo.14001120  # SoilX final report (version DOI); CV cites the concept DOI 10.5281/zenodo.14001119

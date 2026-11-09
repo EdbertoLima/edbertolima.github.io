@@ -7,9 +7,9 @@ author_profile: false
 <br/>
 
 # Edberto Moura Lima
-PhD in Forest Engineering
+Senior Researcher, BAW Research
 
-<a href="mailto:edberto.mouralima@baw.at">edberto.mouralima@baw.at</a> - <a href="mailto:edberto.moura@gmail.com">edberto.moura@gmail.com</a><br/><i class="fa-solid fa-phone fa-2xs"></i> +43 681 1021 7046
+<a href="mailto:edberto.mouralima@baw.at">edberto.mouralima@baw.at</a> - <a href="mailto:edberto.moura@gmail.com">edberto.moura@gmail.com</a>
 
 <div id="webaddress">
   <a href="https://edbertolima.github.io"><i class="fa-solid fa-house"></i> edbertolima.github.io</a> - 
@@ -48,6 +48,24 @@ PhD in Forest Engineering
 
 `2015`
 **Intern** <br/> *Department of Engineering, Terracap*, Brasília, Brazil.
+
+## Projects and research visits
+
+`2025-present`
+**VeSchN - Quantifying evapotranspiration of reed at Lake Neusiedl** <br/> *BAW Research*, Austria.<br/>
+Quantifying how much the reed belt contributes to the lake's total evapotranspiration, and how reed vitality, reed management, and hydrological and meteorological conditions influence it. Contributing to the remote sensing component: satellite-based ET estimation (Sentinel-2, 2016-2026) and upscaling of field measurements to the whole reed belt. The results support decisions on reed management and regional water management.
+
+`2020-2022`
+**GIS Team Leader, Restaura PAMPA project** <br/> *Universidade Federal de Santa Maria*, RS, Brazil.<br/>
+Land use and cover mapping with Google Earth Engine for conservation units; identification of areas for protection and restoration.
+
+`2021`
+**Visiting Researcher** <br/> *BOKU University*, Vienna, Austria. Supervisor: Dr. Bano Mehdi-Schulz.<br/>
+Integration of land-use dynamics into the SWAT model to assess water yield.
+
+`2019-2020`
+**Visiting Researcher (ELAP scholarship)** <br/> *University of Lethbridge*, AB, Canada. Supervisor: Dr. Laura Chasmer.<br/>
+LiDAR analysis of wetland vegetation change near oil sands disturbance.
 
 ## Publications
 
@@ -98,8 +116,6 @@ Cerqueira, C., Môra, R., Lenzi, I., Drescher, R., **Lima, E. M.**, Lisboa, G. d
 `2025`
 Ebling, A. A., Behling, A., **Lima, E. M.**, MacFarlane, D. W., & David, H. C. Sampling Amazonian forest with clusters to measure tree species diversity: dissociating the effect of cluster size and sample size. *Research Square*. doi: [10.21203/rs.3.rs-7328739/v1](https://doi.org/10.21203/rs.3.rs-7328739/v1), 2025.
 
----
-
 ### Summary Published in Proceedings of Conferences
 
 `2024`
@@ -145,8 +161,6 @@ Correa, U. O. S., Reichert, J. M., **Lima, E. M.**, Cavalli, J. P. Uso do softwa
 
 Oliveira, L. S. B., Rezende, A. V., Azevedo, G. B., **Lima, E. M.**, Matos, N. M. Diversidade e dispersão das espécies lenhosas em áreas de cerrado sensu stricto, no período de 1996 a 2011, após supressão da vegetação em 1988 [Diversity and dispersion of woody species in areas of cerrado sensu stricto, from 1996 to 2011, after suppression of vegetation in 1988]. *VIII Simpósio Brasileiro de Pós-Graduação em Ciências Florestais, Recife*.
 
----
-
 ### Other Publications  
 
 `2017`
@@ -161,23 +175,18 @@ Milani, J. E. F., **Lima, E. M.** Restauração de Áreas Degradadas [Restoratio
 
 `2021`
 **Doctoral Research Scholarship - CAPES/PRINT Program**  
-- **Process Number:** 88887.574831/2020-00  
 - **Host Institution:** Universität für Bodenkultur Wien (BOKU), Austria  
-- **Scholarship Program:** CAPES/PRINT - Institutional Internationalization Program (Edital nº 41/2017)  
-- **Modality:** Doctoral Sandwich (Doutorado Sanduíche)
+- **Scholarship Program:** CAPES/PRINT - Institutional Internationalization Program (Edital nº 41/2017)
 
 `2019`
 **Emerging Leaders in the Americas Program (ELAP) Scholarship**  
 - **Host Institution:** University of Lethbridge, Canada
 - **Scholarship Program:** Global Affairs Canada International Scholarships Program  
 
-<br/>
 `2013 - 2015`
 **Undergraduate Sandwich Scholarship - Science Without Borders (CAPES)**  
 - **Scholarship Program:** Science Without Borders Program (Ciência Sem Fronteiras - CsF) 
-- **Process Number:** 88888.024634/2013-00  
-- **Host Institution:** Institute of Technology Sligo, Ireland  
-- **Modality:** Undergraduate Sandwich (Graduação Sanduíche)  
+- **Host Institution:** Institute of Technology Sligo, Ireland
 
 ### National Scholarships 
 
@@ -203,23 +212,10 @@ Milani, J. E. F., **Lima, E. M.** Restauração de Áreas Degradadas [Restoratio
 
 ### Presentations
 
-`2024`
-**Lima, E. M.**, Böning, K., and Mehdi-Schulz, B. Comparative analysis of two tillage systems and their implications for soil hydrology, carbon dynamics, and nitrogen cycling in a changing climate. *SWAT Conference 2024*, Lima, Peru, 9–13 September 2024. [Link](https://swatconference.tamu.edu/#/book-of-abstracts/2024-peru).
-
-**Lima, E. M.**, Böning, K., Arnillas, C. A., and Mehdi-Schulz, B. APEX R tool: An Open-source R scripted workflow to prepare model inputs and execute APEX simulations in parallel. *SWAT Conference 2024*, Lima, Peru, 9–13 September 2024. [Link](https://swatconference.tamu.edu/#/book-of-abstracts/2024-peru).  
-
 `2019`
 Chasmer, L., Hopkinson, C., Mahoney, C., **Lima, E. M.**, Montgomery, J., Cobbaert, D. Assessing wetland ecosystem changes using remotely sensed data. *(Presentation/Other)*.
 
 Chasmer, L., **Lima, E. M.**, Mahoney, C., Hopkinson, C., Cobbaert, D. Comparing spatial distribution of vegetation structural change in wetlands proximal to disturbance: Oil sands region, Alberta, Canada. *(Presentation/Conference or Colloquium)*.  
-
-`2018`
-**Lima, E. M.**, Curcio, G. R., Bonnet, A., Reichert, J. M., Palma, V. H. Simulação do fluxo de água em Neossolo Regolítico Distrófico Petroplíntico e obstáculos para restauração de áreas degradadas [Simulation of water flow in petroplinthic dystrophic Regolithic Neosol and obstacles to the restoration of degraded areas]. *(Presentation/Conference or Colloquium)*.  
-
-`2014`
-**Lima, E. M.**, Rezende, A. V., Oliveira, L. S. B., Azevedo, G. B., Matos, N. M. Diversidade e riqueza em área de Cerrado sensu stricto após diferentes intensidades de exploração da vegetação [Diversity and richness in Cerrado sensu stricto areas under different logging intensities]. *(Presentation/Symposium)*.
-
-Oliveira, L. S. B., Rezende, A. V., Azevedo, G. B., **Lima, E. M.**, Matos, N. M. Diversidade e dispersão das espécies lenhosa em áreas de cerrado sensu stricto, no período de 1996 a 2011, após supressão da vegetação em 1988 [Diversity and dispersion of woody species in areas of cerrado sensu stricto, from 1996 to 2011, after suppression of vegetation in 1988]. *(Presentation/Symposium)*.  
 
 `2013`
 **Lima, E. M.**, Rezende, A. V., Oliveira, L. S. B., Miranda, J. F. N. Dinâmica de uma População de Carvoeiro submetido a tratamentos Silviculturais, em áreas de Cerrado Sensu Stricto [Dynamics of a population of Carvoeiro in areas of cerrado sensu stricto under different silvicultural treatments]. *(Presentation/Congress)*.
@@ -258,6 +254,13 @@ Miranda, J. F. N., Rezende, A. V., **Lima, E. M.**, Oliveira, L. S. B., Azevedo,
 `2023`
 **Cartas com Ciência**, Programmes of letter exchanges between scientists and students in Portuguese-speaking countries.
 
+## Skills
+
+**Modelling:** SWAT, APEX, InVEST; water quantity and quality; nature-based solution scenarios<br/>
+**Data analysis:** R, Python, SQL; time series analysis, regression, general linear models, multivariate analysis<br/>
+**GIS and remote sensing:** Google Earth Engine, Sentinel-1/2, Landsat, MODIS, LiDAR; QGIS, ArcGIS; remote sensing of evapotranspiration<br/>
+**Tools:** Git, Markdown, Quarto
+
 ## Languages
 
 Native: Portuguese  
@@ -266,11 +269,7 @@ Independent: Spanish (B2), German (B1)
 
 ## Personal
 
-Birth date: 1<sup>st</sup> October 1989
-
 Citizenship: Brazilian
-
-Residence: Austria (Rot-Weiß-Rot – Karte plus)
 
 <br/>Last updated: {{ page.last_modified_at | date: "%B %Y" }}
 <br/>

@@ -9,14 +9,17 @@
   <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/cv-screen.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/cv-web.css' | relative_url }}">
 </head>
 <body>
   <nav class="cv-nav">
-    <a class="cv-nav-title" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
-    <span class="cv-nav-links">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/assets/files/Edberto_Moura_Lima_CV.pdf' | relative_url }}">PDF</a>
-    </span>
+    <div class="cv-nav-inner">
+      <a class="cv-nav-title" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <span class="cv-nav-links">
+        <a href="{{ '/CV' | relative_url }}">CV</a>
+        <a href="{{ '/assets/files/Edberto_Moura_Lima_CV.pdf' | relative_url }}">PDF</a>
+      </span>
+    </div>
   </nav>
   <div id="main">
     <div id="content">

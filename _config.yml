@@ -67,7 +67,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Senior Researcher, BAW Research. Ecohydrology and remote sensing of evapotranspiration."
   location         : "Vienna, Austria"
-  email            : "edberto.moura@gmail.com"
+  email            : "edberto.mouralima@baw.at"
   links:
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
@@ -128,21 +128,12 @@ author:
     - label: "Google Scholar"
       icon: "fa-brands fa-google-scholar"
       url: "https://scholar.google.com/citations?user=rbwTqKIAAAAJ&hl=en"
-    - label: "Lattes"
-      icon: "ai ai-lattes ai-lg"
-      url: "http://lattes.cnpq.br/8563560554688579"
     - label: "ORCID"
       icon: "fa-brands fa-orcid"
       url: "https://orcid.org/0000-0002-8447-8460"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EdbertoLima"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://gitlab.com/EdbertoLima"
-    - label: "Bluesky"
-      icon: "fa-brands fa-fw fa-bluesky"
-      url: "https://bsky.app/profile/edbertoml.bsky.social"
 
 
 # Site Footer

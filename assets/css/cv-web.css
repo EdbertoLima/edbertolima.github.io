@@ -1,0 +1,71 @@
+/* Web-only styles for the CV page: match the home page (Minimal Mistakes "air" skin).
+   Not used by the PDF build, which only reads cv-screen.css. */
+
+body {
+	margin: 0;
+	background-color: #eeeeee;
+	color: #222831;
+	font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue",
+		"Lucida Grande", Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: inherit;
+}
+
+a {
+	color: #393e46;
+}
+
+#webaddress a {
+	color: inherit;
+}
+
+/* Top bar, same look as the home page masthead */
+.cv-nav {
+	border-bottom: 1px solid #cdcfd1;
+}
+
+.cv-nav-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1214px;
+	margin: 0 auto;
+	padding: 1.6em 1em;
+	font-size: 1.25em;
+}
+
+.cv-nav a {
+	color: #222831;
+	text-decoration: none;
+}
+
+.cv-nav-title {
+	font-weight: bold;
+}
+
+.cv-nav-links a {
+	margin-left: 1.8em;
+}
+
+.cv-nav-links a:hover,
+.cv-nav-title:hover {
+	text-decoration: underline;
+}
+
+/* Keep the CV in a centred column on wide screens */
+#main {
+	max-width: 1000px;
+	margin: 2.5em auto 4em auto;
+	padding: 0 1em;
+}
+
+@media only screen and (max-width: 600px) {
+	.cv-nav-inner {
+		padding: 1em;
+	}
+	#main {
+		margin-top: 1.5em;
+	}
+}

@@ -24,7 +24,7 @@ My research looks at how land use, soil management and nature-based solutions sh
 
 ### Software
 
-- **[Rainfall Erosivity Monitor](https://github.com/EdbertoLima/rainfall-erosivity-monitor)** (Python, Streamlit): web application that computes the EI30 rainfall erosivity index from GeoSphere Austria station data, detects erosive storms and issues colour-coded soil-erosion alerts with field survey recommendations.
+- **[Rainfall Erosivity Monitor](https://github.com/EdbertoLima/rainfall-erosivity-monitor)** (Python, Streamlit): web application that computes the EI30 rainfall erosivity index from GeoSphere Austria station data, detects erosive storms and issues colour-coded soil-erosion alerts with field survey recommendations. [DOI](https://doi.org/10.5281/zenodo.24081100)
 - **[QField erosion survey](https://github.com/EdbertoLima/erosion-survey-qfield)**: field guide and QGIS/QField project for mapping soil erosion by water following the DWA-M 921 guideline (German and English). With G. Liebhard, T. Brunner and P. Strauss. [DOI](https://doi.org/10.5281/zenodo.18403752)
 
 ### Research interests

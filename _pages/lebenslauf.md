@@ -175,6 +175,7 @@ LiDAR-Analyse von Vegetationsveränderungen in Feuchtgebieten im Umfeld der Öls
 
 `2026`
 **Rainfall Erosivity Monitor (REM)** ([GitHub](https://github.com/EdbertoLima/rainfall-erosivity-monitor))<br/>
+**Lima, E. M.** *Rainfall Erosivity Monitor (REM)*. Zenodo. [DOI](https://doi.org/10.5281/zenodo.24081100)<br/>
 Python/Streamlit-Webanwendung zur Berechnung des Regenerosivitätsindex EI30 aus Daten der GeoSphere-Austria-Wetterstationen, mit Erkennung erosiver Starkregen, farbcodierten Erosionswarnungen und Empfehlungen für Feldbegehungen.
 
 `2026`

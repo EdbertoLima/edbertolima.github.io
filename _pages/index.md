@@ -173,6 +173,7 @@ LiDAR analysis of wetland vegetation change near oil sands disturbance.
 
 `2026`
 **Rainfall Erosivity Monitor (REM)** ([GitHub](https://github.com/EdbertoLima/rainfall-erosivity-monitor))<br/>
+**Lima, E. M.** *Rainfall Erosivity Monitor (REM)*. Zenodo. [DOI](https://doi.org/10.5281/zenodo.24081100)<br/>
 Python/Streamlit web application computing the EI30 rainfall erosivity index from GeoSphere Austria weather station data, with storm detection, colour-coded erosion alerts and field survey recommendations.
 
 `2026`

@@ -69,3 +69,34 @@ a {
 		margin-top: 1.5em;
 	}
 }
+
+/* Section spacing on the web page (the PDF sets its own) */
+h2 {
+	margin-top: 2.2em;
+}
+
+/* Collapsible conference abstracts */
+details {
+	margin-bottom: 1em;
+}
+
+details > summary {
+	position: relative;
+	left: 25%;
+	width: 55%;
+	margin-bottom: 0.8em;
+	color: #1f6f8b;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+details[open] > summary {
+	margin-bottom: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+	details > summary {
+		position: static;
+		width: auto;
+	}
+}

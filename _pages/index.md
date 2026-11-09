@@ -7,7 +7,7 @@ author_profile: false
 <br/>
 
 # Edberto Moura Lima
-PhD in Forest Science
+PhD in Forest Engineering
 
 <!-- Institute of Seismology, Department of Geosciences and Geography<br/>
 P.O. Box 68 (Pietari Kalmin katu 5)<br/>
@@ -23,7 +23,7 @@ FI-00014 University of Helsinki, Finland<br/>
   <a href="https://orcid.org/0000-0002-8447-8460"><i class="fa-brands fa-orcid"></i> 0000-0002-8447-8460</a> - 
   <!-- <a href="https://www.researchgate.net/profile/David_Whipp"><i class="ai ai-researchgate"></i> David_Whipp</a> - -->
   <a href="https://www.linkedin.com/in/edbertolima/"><i class="fa-brands fa-linkedin"></i> edbertolima</a> - 
-  <a href="https://bsky.app/profile/edbertoml.bsky.social"><i class="fab fa-fw fa-x-twitter"></i> @edbertoml.bsky.social</a>
+  <a href="https://bsky.app/profile/edbertoml.bsky.social"><i class="fa-brands fa-bluesky"></i> @edbertoml.bsky.social</a>
 </div>
 
 ## Education 
@@ -38,7 +38,7 @@ FI-00014 University of Helsinki, Finland<br/>
 **B.S., in Forest Engineering**, *Universidade de Brasília* - UnB, DF, Brazil.
 
 ## Experience
-`2025`
+`2025-present`
 **Senior Researcher** <br/> *BAW Research*, Pollnbergstraße 1,3252 Petzenkirchen, Austria.
 
 `2022-2024`
@@ -68,11 +68,17 @@ FI-00014 University of Helsinki, Finland<br/>
 -->
 
 ### Journal articles
-`2025`
-Borja, D., Daněk, J., Assis, J. C., Gorosábel, A., Lundquist, C., Rosa, I., … **Lima, E. M.**, Borges, R. C. Rethinking scenario building for sustainable futures: mobilizing conscientização, social learning and knowledge co-production. Ecosystems and People, 21(1).doi: [https://doi.org/10.1080/26395916.2025.2507247](https://doi.org/10.1080/26395916.2025.2507247), 2025.
+`2026`
+**Lima, E. M.**, Mehdi-Schulz, B., & Reichert, J. M. Natural ecosystem loss in an Atlantic Forest agricultural basin: drivers of land-use change and future landscape trajectories. *Frontiers in Sustainable Food Systems, 10*, 1912707. doi: [10.3389/fsufs.2026.1912707](https://doi.org/10.3389/fsufs.2026.1912707), 2026.
+
+Meurer, K. H. E., Turek, M. E., Pullens, J. W. M., **Lima, E. M.**, Schreel, J. D. M., Holzkämper, A., & Mehdi-Schulz, B. Site-specific climate impacts outweigh no-till benefits for modelled winter wheat yields across a European gradient. *European Journal of Soil Science, 77*(3), e70363. doi: [10.1111/ejss.70363](https://doi.org/10.1111/ejss.70363), 2026.
 
 `2025`
-Niemeyer J, Resende FM, **Lima, E. M.** and Vale MM. Risk and adaptation of socio-ecological systems to global change in the dry forests of Northeastern South America. Front. Ecol. Evol. 13:1536445. doi: [10.3389/fevo.2025.1536445](10.3389/fevo.2025.1536445), 2025.
+Turek, M. E., Pullens, J. W. M., Meurer, K. H. E., **Lima, E. M.**, Mehdi-Schulz, B., & Holzkämper, A. Pedotransfer functions versus model structure: what drives variance in agro-hydrological model results? *European Journal of Soil Science, 76*(2), e70088. doi: [10.1111/ejss.70088](https://doi.org/10.1111/ejss.70088), 2025.
+
+Borja, D., Daněk, J., Assis, J. C., Gorosábel, A., Lundquist, C., Rosa, I., … **Lima, E. M.**, Borges, R. C. Rethinking scenario building for sustainable futures: mobilizing conscientização, social learning and knowledge co-production. *Ecosystems and People, 21*(1). doi: [10.1080/26395916.2025.2507247](https://doi.org/10.1080/26395916.2025.2507247), 2025.
+
+Niemeyer J, Resende FM, **Lima, E. M.** and Vale MM. Risk and adaptation of socio-ecological systems to global change in the dry forests of Northeastern South America. Front. Ecol. Evol. 13:1536445. doi: [10.3389/fevo.2025.1536445](https://doi.org/10.3389/fevo.2025.1536445), 2025.
 
 `2024`
 Mehdi-Schulz, B., Zoboli, O., Schürz, C., Strenge, E., **Lima, E. M.**, Parajka, J., Wang, C., Zessner, M., & Schönhart, M. The impacts of climate change on nitrogen losses to the environment in Austria: A dual model analysis across spatial and temporal scales to support policy decisions. Science of The Total Environment, 918, 170730. doi: [10.1016/j.scitotenv.2024.170730](https://doi.org/10.1016/j.scitotenv.2024.170730), 2024.
@@ -100,6 +106,11 @@ de Oliveira, T., **Lima, E. M.**, Sanquetta, C., & dalla Corte, A. Simultaneous 
 
 `2017`  
 Cerqueira, C., Môra, R., Lenzi, I., Drescher, R., **Lima, E. M.**, Lisboa, G. d. S., & França, L. d. J. Modeling height of *Pinus caribaea* var. *hondurensis* in different spacing. *BIOFIX Scientific Journal, 2*(2), 93-99. doi: [10.5380/biofix.v2i2.56012](https://doi.org/10.5380/biofix.v2i2.56012), 2017.
+
+### Preprints
+
+`2025`
+Ebling, A. A., Behling, A., **Lima, E. M.**, MacFarlane, D. W., & David, H. C. Sampling Amazonian forest with clusters to measure tree species diversity: dissociating the effect of cluster size and sample size. *Research Square*. doi: [10.21203/rs.3.rs-7328739/v1](https://doi.org/10.21203/rs.3.rs-7328739/v1), 2025.
 
 ---
 
@@ -346,8 +357,8 @@ Guest lectures in years 2010, 2019, 2021, 2022
 - \- Introduction to Oceanography laboratory
 --->
 
-## Supervised Theses
 <!--
+## Supervised Theses
 
 ### Postdoctoral researchers
 
@@ -596,6 +607,13 @@ Geological Society of America
 American Geophysical Union
 -->
 
+## Professional service
+
+`2023-present`
+**Referee**.
+
+**Journals**: *Journal of South American Earth Sciences*
+
 ## Volunteering
 
 `2023`
@@ -613,7 +631,7 @@ Basic: German (A2)
 
 Birth date: 1<sup>st</sup> October 1989
 
-Citizenship: Brasilian
+Citizenship: Brazilian
 
 Residence: Austria (Rot-Weiß-Rot – Karte plus)
 
@@ -621,6 +639,5 @@ Residence: Austria (Rot-Weiß-Rot – Karte plus)
 Family: 
 -->
 
-<br/>Last updated: 13 April 2026<br/>
-Last updated: {{ page.last_modified_at | date: "%B %Y" }}
+<br/>Last updated: {{ page.last_modified_at | date: "%B %Y" }}
 <br/>

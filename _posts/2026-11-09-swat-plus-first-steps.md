@@ -27,12 +27,14 @@ first steps with SWAT+.
 ## What SWAT+ is
 
 **SWAT+** (*Soil and Water Assessment Tool Plus*) is a watershed model that is **continuous in
-time** (daily time step), **semi-distributed** and **physically based**: its parameters come from
-soil, land use and topography, and have physical meaning. It estimates streamflow, the water
+time** (daily time step), **semi-distributed** and **process-based**: most parameters come from
+soil, land use and topography and have physical meaning, although some components are empirical
+(for example, the Curve Number method for surface runoff). It estimates streamflow, the water
 balance, sediments, nutrients and the effect of management, land-use and climate scenarios.
 
-SWAT+ is a complete restructuring of SWAT 2012, developed by USDA-ARS and Texas A&M University.
-The process equations are the same; the organisation is different:
+SWAT+ is a complete restructuring of SWAT 2012, developed by USDA-ARS and Texas A&M University
+([Bieger et al., 2017](https://doi.org/10.1111/1752-1688.12482)). Most process equations come from SWAT 2012
+(Neitsch et al., 2011); the organisation is different:
 
 | Aspect | SWAT 2012 | SWAT+ |
 | --- | --- | --- |
@@ -58,6 +60,7 @@ The first source of confusion is that SWAT+ is in practice a set of three progra
 | **SWAT+** (executable) | The model itself: reads the text files in `TxtInOut` and writes the outputs |
 
 Everything comes with the [official SWAT+ installer](https://swatplus.gitbook.io/docs/installation).
+The model source code is archived on Zenodo (Arnold et al., 2026).
 Use the **64-bit QGIS LTR**, the version tested by the developers, and tick the optional global
 weather generator download during installation.
 
@@ -74,8 +77,8 @@ A basic model needs five datasets, **all in the same metric projection**:
 | Observed streamflow | Evaluation, calibration and validation | ANA Hidroweb / SNIRH |
 
 For delineation, prefer a **terrain model** such as ANADEM
-([Laipelt et al., 2024](https://doi.org/10.3390/rs16132321)), which removes the vegetation bias of Copernicus GLO-30:
-surface models such as SRTM and Copernicus include canopy height, which can shift the drainage
+([Laipelt et al., 2024](https://doi.org/10.3390/rs16132321)), which reduces the vegetation bias of Copernicus GLO-30:
+surface models such as SRTM and Copernicus partly include canopy height, which can shift the drainage
 network in forested areas.
 
 In practice, the hardest dataset is almost always the **soil property table** (*usersoil*):
@@ -84,15 +87,15 @@ depth, bulk density, available water and conductivity for every layer.
 Two rules prevent most errors:
 
 - QSWAT+ assumes **all cells have the same area**. A DEM in degrees (latitude/longitude) must be
-  reprojected first, to the UTM zone of the watershed or to an equal-area projection for large
-  basins.
+  reprojected first, to the UTM zone of the watershed (in Brazil, SIRGAS 2000 / UTM) or to an
+  equal-area projection for basins that cross UTM zones.
 - Folder and file names **without spaces, accents or special characters**.
 
 **Lessons from a real project with Brazilian data:**
 
-- **HIDROWEB streamflow:** use only the checked (*consistido*) series and read the status code of each day (1 real, 2 estimated, 3 doubtful, 4 dry gauge). Some years are entirely estimated; evaluate the model on real-status days. [CAMELS-BR](https://doi.org/10.5194/essd-12-2075-2020) is a useful cross-check.
-- **Station metadata is not always right:** reported drainage areas can be wrong and old coordinates are rounded. Check the area against your delineation.
-- **BR-DWGD gridded rainfall** ([Xavier et al., 2022](https://doi.org/10.1002/joc.7731)) matches gauges in totals and timing, but has too many light-rain days and too few heavy ones. With the Curve Number method that means less surface runoff, which calibration then hides. Compare wet-day and heavy-rain frequencies with ANA gauges before using it.
+- **Hidroweb streamflow:** use only the checked (*consistido*, consistency level 2) series and read the status code of each day (1 real, 2 estimated, 3 doubtful, 4 dry gauge). At some stations, whole years are estimated; evaluate the model on real-status days. [CAMELS-BR](https://doi.org/10.5194/essd-12-2075-2020) is a useful cross-check.
+- **Station metadata is not always right:** reported drainage areas can be wrong and old coordinates may be rounded. Check the area against your delineation.
+- **BR-DWGD gridded rainfall** ([Xavier et al., 2022](https://doi.org/10.1002/joc.7731)): in that project it matched gauges in totals and timing, but had too many light-rain days and too few heavy ones. With the Curve Number method that means less surface runoff, which calibration then hides. Compare wet-day and heavy-rain frequencies with ANA gauges before using it.
 - **ZARC sowing windows** are insurance periods, not observed practice: use Conab crop progress for real sowing dates and IBGE PAM yields to check crop growth.
 
 ## Checklist before opening QSWAT+
@@ -115,7 +118,7 @@ Half an hour of checking here saves hours later:
 1. **Create the project** in QSWAT+ (SWAT+ button in QGIS, *New Project*).
 2. **Delineate the watershed:** load the DEM, set the channel and stream thresholds (smaller
    thresholds give more subbasins and a slower model), and add the outlet.
-   Set the thresholds yourself (the defaults depend on the DEM size), then **check every outlet**: count how many snapped, and compare the delineated drainage area with the gauge's (a ratio outside 0.8-1.25 means the point is in the wrong place).
+   Set the thresholds yourself (the defaults depend on the DEM size), then **check every outlet**: count how many snapped, and compare the delineated drainage area with the gauge's (as a rule of thumb, a ratio outside 0.8-1.25 means the point is in the wrong place).
 3. **Create landscape units:** separate floodplain and upslope areas (the *DEM inversion* method
    with default values is a good start).
 4. **Generate HRUs:** land-use and soil maps with their lookup tables, slope classes, and a filter
@@ -149,20 +152,24 @@ A model with a beautiful hydrograph and an absurd water balance is right for the
 Before comparing with observed streamflow, open `basin_wb_aa.txt` (average annual watershed
 balance) and check:
 
-- **Closure:** precipitation ≈ evapotranspiration + surface runoff + lateral flow + percolation +
+- **Closure (soil water balance):** precipitation ≈ evapotranspiration + surface runoff + lateral flow + percolation +
   change in storage.
-- **ET/P** consistent with the regional climate (ET higher than precipitation is a red flag).
+- **ET/P** consistent with the regional climate (ET higher than precipitation is a red flag, unless irrigation or
+  groundwater supplies the difference).
 - **Flow partitioning:** in a perennial watershed with an aquifer, nearly all flow as surface
   runoff points to Curve Numbers that are too high.
 - **Vegetation:** near-zero biomass in agricultural HRUs points to a management problem.
-- **Plausibility:** forest ET should exceed cropland ET, and simulated yields should be near the municipal PAM yields.
+- **Plausibility:** forest ET should usually exceed cropland ET, and simulated yields should be near the municipal PAM yields.
 - **Floodplain and upslope units:** with these landscape units, upslope runoff that runs on to the floodplain can be counted twice in `surq_gen` of `basin_wb`; close the balance with HRU, aquifer and channel outputs instead, and check this in your SWAT+ version.
 
 Only then comes calibration: first **soft calibration** (matching the water-balance fractions to
 regional values), then **hard calibration** against observed streamflow, and finally
 **validation** on an independent period. As a reference for monthly streamflow,
 [Moriasi et al. (2007)](https://doi.org/10.13031/2013.23153) consider NSE > 0.50, |PBIAS| < 25% and
-RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing runs, not as proof that a model is fit for purpose. NSE and [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) are dominated by high flows, so calibrate crop growth and evapotranspiration before streamflow ([Piniewski et al., 2026](https://doi.org/10.1016/j.envsoft.2025.106794)), and also check hydrological signatures: the flow duration curve, Q95, the baseflow index and the monthly regime.
+RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing runs, not as proof that a model is fit for purpose. NSE and [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) are dominated by high flows, so also check hydrological
+signatures: the flow duration curve, Q95, the baseflow index and the monthly regime. Calibrate crop
+growth and evapotranspiration before streamflow, too: crop calibration changes the simulated
+water, sediment and nutrient results ([Piniewski et al., 2026](https://doi.org/10.1016/j.envsoft.2025.106794)).
 
 ## Keep learning
 
@@ -184,7 +191,7 @@ RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing 
   [SWAT+ modelling protocol](https://doi.org/10.5281/zenodo.7463395) applied in 14 European
   agricultural catchments (Schürz et al., 2022), the
   [common optimisation protocol](https://doi.org/10.5281/zenodo.11473793) for water and nutrient
-  retention measures (Strauch & Schürz, 2024) and the field-scale SWAP modelling protocol
+  retention measures (Strauch & Schürz, 2024) and the field-scale [SWAP modelling protocol](https://doi.org/10.5281/zenodo.7907114)
   (Farkas et al., 2023): good examples of how to document a modelling study.
 - **R packages from the OPTAIN workflow:** [SWATprepR](https://biopsichas.github.io/SWATprepR/)
   (input data preparation), [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (management
@@ -199,6 +206,10 @@ RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing 
 
 - Arnold, J. G., Čerkasova, N., White, M., et al. (2026). *Soil and Water Assessment Tool Plus
   (SWAT+)* [Software]. Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
+- Bieger, K., Arnold, J. G., Rathjens, H., White, M. J., Bosch, D. D., Allen, P. M., Volk, M., &
+  Srinivasan, R. (2017). Introduction to SWAT+, a completely restructured version of the Soil and
+  Water Assessment Tool. *Journal of the American Water Resources Association, 53*(1), 115-130.
+  [doi:10.1111/1752-1688.12482](https://doi.org/10.1111/1752-1688.12482)
 - Chagas, V. B. M., et al. (2020). CAMELS-BR: hydrometeorological time series and landscape
   attributes for 897 catchments in Brazil. *Earth System Science Data, 12*(3), 2075-2096.
   [doi:10.5194/essd-12-2075-2020](https://doi.org/10.5194/essd-12-2075-2020)

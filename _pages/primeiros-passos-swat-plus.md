@@ -31,8 +31,10 @@ nos primeiros passos com o SWAT+.
 ## O que é o SWAT+
 
 O **SWAT+** (*Soil and Water Assessment Tool Plus*) é um modelo hidrológico de bacia
-hidrográfica **contínuo** (passo de tempo diário), **semidistribuído** e de **base física**: seus
-parâmetros derivam do solo, do uso e cobertura da terra e do relevo, e têm significado físico. O
+hidrográfica **contínuo** (passo de tempo diário), **semidistribuído** e **baseado em processos**: a maior
+parte dos parâmetros deriva do solo, do uso e cobertura da terra e do relevo e tem significado
+físico, embora alguns componentes sejam empíricos (por exemplo, o método da Curva-Número para o
+escoamento superficial). O
 modelo estima vazão, balanço hídrico, produção de sedimentos e transporte de nutrientes, e permite
 avaliar cenários de manejo, de uso da terra e de mudanças climáticas.
 
@@ -42,8 +44,8 @@ avaliar cenários de manejo, de uso da terra e de mudanças climáticas.
 </figure>
 
 O SWAT+ é uma reestruturação completa do SWAT 2012, desenvolvida pelo USDA-ARS e pela Texas A&M
-University. As equações que descrevem os processos são as mesmas; muda a forma como a bacia é
-organizada:
+University ([Bieger et al., 2017](https://doi.org/10.1111/1752-1688.12482)). A maior parte das equações que descrevem os
+processos vem do SWAT 2012 (Neitsch et al., 2011); muda a forma como a bacia é organizada:
 
 | Aspecto | SWAT 2012 | SWAT+ |
 | --- | --- | --- |
@@ -70,6 +72,7 @@ A primeira fonte de confusão é que o SWAT+ é, na prática, um conjunto de tr�
 | **SWAT+** (executável) | O modelo propriamente dito: lê os arquivos de texto da pasta `TxtInOut` e grava as saídas |
 
 Os três são instalados pelo [instalador oficial do SWAT+](https://swatplus.gitbook.io/docs/installation).
+O código-fonte do modelo está arquivado no Zenodo (Arnold et al., 2026).
 Use o **QGIS LTR de 64 bits**, versão testada pelos desenvolvedores, e marque, durante a
 instalação, o download do gerador climático global.
 
@@ -87,8 +90,8 @@ projetado (em metros)**:
 | Vazão observada | Avaliação, calibração e validação | Hidroweb / SNIRH (ANA) |
 
 Para a delimitação da bacia, prefira um **modelo digital de terreno** como o ANADEM
-([Laipelt et al., 2024](https://doi.org/10.3390/rs16132321)), que remove o viés da vegetação do Copernicus GLO-30: modelos
-de superfície, como o SRTM e o Copernicus, incluem a altura do dossel, o que pode deslocar a rede
+([Laipelt et al., 2024](https://doi.org/10.3390/rs16132321)), que reduz o viés da vegetação do Copernicus GLO-30: modelos
+de superfície, como o SRTM e o Copernicus, incluem parte da altura do dossel, o que pode deslocar a rede
 de drenagem em áreas florestadas.
 
 Na prática, o dado mais difícil de montar é quase sempre a **tabela de atributos dos solos**
@@ -105,15 +108,15 @@ Dois cuidados evitam boa parte dos erros:
 **Lições de uma aplicação real com dados brasileiros:**
 
 - **Vazão do Hidroweb:** utilize apenas a série consistida (nível de consistência 2) e verifique o
-  *status* de cada dia (1 real, 2 estimado, 3 duvidoso, 4 régua seca). Há anos inteiros apenas com
+  *status* de cada dia (1 real, 2 estimado, 3 duvidoso, 4 régua seca). Em algumas estações, há anos inteiros apenas com
   valores estimados; avalie o desempenho do modelo nos dias com dado real. O
   [CAMELS-BR](https://doi.org/10.5194/essd-12-2075-2020) é uma boa referência para verificação
   cruzada.
 - **Os metadados das estações nem sempre são confiáveis:** áreas de drenagem podem estar
-  incorretas e coordenadas antigas são arredondadas. Compare a área informada com a da bacia
+  incorretas e coordenadas antigas podem estar arredondadas. Compare a área informada com a da bacia
   delimitada.
-- **A precipitação em grade do BR-DWGD** ([Xavier et al., 2022](https://doi.org/10.1002/joc.7731))
-  concorda com os pluviômetros em totais e na distribuição temporal, mas apresenta dias com chuva
+- **A precipitação em grade do BR-DWGD** ([Xavier et al., 2022](https://doi.org/10.1002/joc.7731)),
+  nesse projeto, concordou com os pluviômetros em totais e na distribuição temporal, mas apresentou dias com chuva
   fraca em excesso e poucos eventos intensos. Com o método da Curva-Número, isso reduz o
   escoamento superficial simulado, e a calibração acaba mascarando o problema. Antes de usar a
   grade, compare a frequência de dias chuvosos e de eventos intensos com estações pluviométricas
@@ -146,7 +149,7 @@ Meia hora de verificação nesta etapa economiza horas depois:
    e cursos d'água (limiares menores geram mais sub-bacias e um modelo mais lento) e indicar o
    exutório. Defina os limiares de forma consciente, pois os valores padrão dependem do tamanho do
    MDE, e **confira cada exutório**: verifique quantos pontos foram ajustados à rede de drenagem e
-   compare a área de drenagem delimitada com a da estação fluviométrica (uma razão fora do
+   compare a área de drenagem delimitada com a da estação fluviométrica (como regra prática, uma razão fora do
    intervalo de 0,8 a 1,25 indica ponto mal posicionado).
 3. **Gerar as unidades de paisagem:** separar planície de inundação e encosta (o método de
    inversão do MDE, *DEM inversion*, com os valores padrão, é um bom ponto de partida).
@@ -184,14 +187,14 @@ Um modelo com um hidrograma bem ajustado e um balanço hídrico incoerente acert
 errados. Antes de comparar a vazão simulada com a observada, abra o arquivo `basin_wb_aa.txt`
 (médias anuais da bacia) e verifique:
 
-- **Fechamento do balanço:** precipitação ≈ evapotranspiração + escoamento superficial +
+- **Fechamento do balanço (perfil do solo):** precipitação ≈ evapotranspiração + escoamento superficial +
   escoamento lateral + percolação + variação do armazenamento.
 - **Razão ET/P** compatível com o clima da região (evapotranspiração maior que a precipitação é
-  sinal de alerta).
+  sinal de alerta, a menos que irrigação ou água subterrânea supram a diferença).
 - **Partição do escoamento:** numa bacia perene, com aquífero, um escoamento quase todo superficial
   indica valores de CN altos demais.
 - **Vegetação:** biomassa próxima de zero em HRUs agrícolas indica problema no manejo.
-- **Coerência física:** a evapotranspiração das florestas deve superar a das lavouras, e a
+- **Coerência física:** a evapotranspiração das florestas em geral deve superar a das lavouras, e a
   produtividade simulada deve ser próxima da registrada na PAM para o município.
 - **Unidades de planície e de encosta:** quando elas são usadas, o escoamento da encosta que chega
   à planície pode ser contabilizado duas vezes em `surq_gen`, no arquivo `basin_wb`. Feche o balanço
@@ -206,10 +209,10 @@ consideram satisfatórios NSE > 0,50, |PBIAS| < 25% e RSR ≤ 0,70. Esses limiar
 convenção, útil para comparar simulações, e não uma prova de que o modelo atende ao objetivo do
 estudo. A eficiência de Nash-Sutcliffe (NSE) e a de Kling-Gupta
 ([KGE; Gupta et al., 2009](https://doi.org/10.1016/j.jhydrol.2009.08.003)) são dominadas pelas
-vazões altas. Por isso, calibre o crescimento das culturas e a evapotranspiração antes da vazão
-([Piniewski et al., 2026](https://doi.org/10.1016/j.envsoft.2025.106794)) e avalie também
-assinaturas hidrológicas: curva de permanência, Q95, índice de escoamento de base (BFI) e regime
-mensal.
+vazões altas; por isso, avalie também assinaturas hidrológicas: curva de permanência, Q95, índice
+de escoamento de base (BFI) e regime mensal. Calibre também o crescimento das culturas e a
+evapotranspiração antes da vazão: a calibração das culturas altera os resultados simulados de
+água, sedimentos e nutrientes ([Piniewski et al., 2026](https://doi.org/10.1016/j.envsoft.2025.106794)).
 
 ## Para continuar aprendendo
 
@@ -232,8 +235,8 @@ mensal.
   [protocolo de modelagem com SWAT+](https://doi.org/10.5281/zenodo.7463395) aplicado em 14 bacias
   agrícolas europeias (Schürz et al., 2022), o
   [protocolo comum de otimização](https://doi.org/10.5281/zenodo.11473793) de medidas de retenção
-  de água e nutrientes (Strauch e Schürz, 2024) e o protocolo de modelagem em escala de parcela
-  com o SWAP (Farkas et al., 2023), bons exemplos de como documentar um estudo de modelagem.
+  de água e nutrientes (Strauch e Schürz, 2024) e o [protocolo de modelagem em escala de parcela
+  com o SWAP](https://doi.org/10.5281/zenodo.7907114) (Farkas et al., 2023), bons exemplos de como documentar um estudo de modelagem.
 - **Pacotes R do fluxo de trabalho do OPTAIN:** [SWATprepR](https://biopsichas.github.io/SWATprepR/)
   (preparação dos dados de entrada), [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/)
   (calendários de manejo) e [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (execução e
@@ -249,6 +252,10 @@ mensal.
 
 - Arnold, J. G., Čerkasova, N., White, M., et al. (2026). *Soil and Water Assessment Tool Plus
   (SWAT+)* [Software]. Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
+- Bieger, K., Arnold, J. G., Rathjens, H., White, M. J., Bosch, D. D., Allen, P. M., Volk, M., &
+  Srinivasan, R. (2017). Introduction to SWAT+, a completely restructured version of the Soil and
+  Water Assessment Tool. *Journal of the American Water Resources Association, 53*(1), 115-130.
+  [doi:10.1111/1752-1688.12482](https://doi.org/10.1111/1752-1688.12482)
 - Chagas, V. B. M., et al. (2020). CAMELS-BR: hydrometeorological time series and landscape
   attributes for 897 catchments in Brazil. *Earth System Science Data, 12*(3), 2075-2096.
   [doi:10.5194/essd-12-2075-2020](https://doi.org/10.5194/essd-12-2075-2020)

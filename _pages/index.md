@@ -78,6 +78,10 @@ LiDAR analysis of wetland vegetation change near oil sands disturbance.
 
 {% include cv/preprints.md %}
 
+### Datasets
+
+{% include cv/datasets.md %}
+
 ### Summary Published in Proceedings of Conferences
 
 <details markdown="1">

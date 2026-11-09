@@ -330,7 +330,11 @@ def scientific(
     """Condensed scientific CV with profile and job duties."""
     md = make_scientific(load_page(REPO / "_pages" / "index.md"), phone)
     # Slightly tighter section spacing keeps the application CV short.
-    html = to_html(md, "Edberto Moura Lima - Scientific CV", extra_css="h2 { margin-top: 1.1em; }")
+    html = to_html(
+        md,
+        "Edberto Moura Lima - Scientific CV",
+        extra_css="h2 { margin-top: 0.9em; } @page { margin: 12mm 14mm 12mm 10mm; }",
+    )
     print_pdf(html, out, find_chrome(chrome))
 
 

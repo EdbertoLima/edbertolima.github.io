@@ -160,11 +160,25 @@ hídrico a valores regionais), depois a **calibração rígida** com a vazão ob
 - O grupo de usuários do SWAT+ e as conferências SWAT anuais.
 - Depois do primeiro modelo: tabelas de decisão para manejo, calibração automática e cenários de
   uso do solo e clima.
+- **Um fluxo de trabalho completo com SWAT+, passo a passo:** a [documentação do OPTAIN CS10](https://moritzshore.github.io/optain-cs10/),
+  de Moritz Shore e colegas, documenta a montagem reprodutível de um modelo SWAT+ para a bacia de
+  Kråkstad (Noruega), dos dados de entrada e da configuração do modelo ao manejo, à verificação,
+  à calibração suave e rígida e a cenários de uso do solo, clima e medidas. Ainda está em
+  construção, mas é um ótimo guia para as etapas depois do primeiro modelo.
+- **O projeto OPTAIN:** [site do projeto](https://www.optain.eu/) e [comunidade no Zenodo](https://zenodo.org/communities/optain-h2020-project/), com
+  protocolos, relatórios e dados. Seus protocolos de modelagem (por exemplo, Farkas et al., 2023)
+  mostram como documentar um estudo de modelagem.
+- **Pacotes R do fluxo OPTAIN:** [SWATprepR](https://biopsichas.github.io/SWATprepR/) (preparação dos dados de entrada),
+  [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (calendários de manejo) e [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (rodar o SWAT+ a partir do R, antigo
+  SWATplusR). O SWATbuildR e o SWATdoctR também fazem parte do fluxo, com acesso restrito.
 
 ## Referências
 
 - Arnold, J. G., Čerkasova, N., White, M., et al. *Soil and Water Assessment Tool Plus (SWAT+)*.
   Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
+- Farkas, C., Shore, M., Cüceloglu, G., Czelnai, L., Nemes, A., Szabó, B., Čerkasova, N.,
+  Idzelyté, R., & Weiland, S. (2023). *SWAP field-scale modelling protocol*. OPTAIN project
+  deliverable. Zenodo. [doi:10.5281/zenodo.7907114](https://doi.org/10.5281/zenodo.7907114)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.

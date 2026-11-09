@@ -152,11 +152,25 @@ RSR ≤ 0.70 satisfactory.
 - The SWAT+ user group and the annual SWAT conferences.
 - After your first model: decision tables for management, automatic calibration, and land-use
   and climate scenarios.
+- **A complete SWAT+ workflow, step by step:** the [OPTAIN CS10 documentation](https://moritzshore.github.io/optain-cs10/) by
+  Moritz Shore and colleagues documents a reproducible SWAT+ setup for the Kråkstad catchment
+  (Norway), from input data and model setup to management, model verification, soft and hard
+  calibration, and land-use, climate and measure scenarios. It is a work in progress, but an
+  excellent guide to the steps that come after your first model.
+- **The OPTAIN project:** [project website](https://www.optain.eu/) and [Zenodo community](https://zenodo.org/communities/optain-h2020-project/), with
+  protocols, reports and data. Its modelling protocols (e.g. Farkas et al., 2023) show how to
+  document a modelling study.
+- **R packages from the OPTAIN workflow:** [SWATprepR](https://biopsichas.github.io/SWATprepR/) (input data preparation),
+  [SWATfarmR](https://chrisschuerz.github.io/SWATfarmR/) (management schedules) and [SWATrunR](https://chrisschuerz.github.io/SWATrunR/) (running SWAT+ from R, formerly
+  SWATplusR). SWATbuildR and SWATdoctR are also part of the workflow, with restricted access.
 
 ## References
 
 - Arnold, J. G., Čerkasova, N., White, M., et al. *Soil and Water Assessment Tool Plus (SWAT+)*.
   Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
+- Farkas, C., Shore, M., Cüceloglu, G., Czelnai, L., Nemes, A., Szabó, B., Čerkasova, N.,
+  Idzelyté, R., & Weiland, S. (2023). *SWAP field-scale modelling protocol*. OPTAIN project
+  deliverable. Zenodo. [doi:10.5281/zenodo.7907114](https://doi.org/10.5281/zenodo.7907114)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.

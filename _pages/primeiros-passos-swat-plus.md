@@ -91,6 +91,13 @@ Duas regras evitam boa parte dos erros:
   bacia ou uma projeção de área igual para bacias que cruzam fusos.
 - Nomes de pastas e arquivos **sem espaços, acentos ou caracteres especiais**.
 
+**Lições de um projeto real com dados brasileiros:**
+
+- **Vazão do HIDROWEB:** use só a série consistida e leia o código de status de cada dia (1 real, 2 estimado, 3 duvidoso, 4 régua seca). Há anos inteiros só com valores estimados; avalie o modelo nos dias com dado real. O [CAMELS-BR](https://doi.org/10.5194/essd-12-2075-2020) é uma boa verificação cruzada.
+- **Metadados das estações nem sempre estão certos:** áreas de drenagem podem estar erradas e coordenadas antigas são arredondadas. Compare a área com o seu delineamento.
+- **A chuva em grade do BR-DWGD** ([Xavier et al., 2022](https://doi.org/10.1002/joc.7731)) concorda com os pluviômetros em totais e no tempo, mas tem dias de chuva fraca demais e de chuva forte de menos. Com a Curva Número isso gera menos escoamento superficial, que a calibração acaba escondendo. Compare a frequência de dias chuvosos e de chuvas fortes com pluviômetros da ANA antes de usá-la.
+- **As janelas do ZARC** são períodos do seguro agrícola, não a prática observada: use o acompanhamento de safra da Conab para datas reais de plantio e a produtividade da PAM/IBGE para conferir o crescimento das culturas.
+
 ## Checklist antes de abrir o QSWAT+
 
 Meia hora de checagem aqui economiza horas depois:
@@ -103,16 +110,20 @@ Meia hora de checagem aqui economiza horas depois:
 - [ ] O exutório está sobre (ou a menos de 300 m de) a drenagem gerada
 - [ ] O período do clima cobre a simulação mais os anos de aquecimento
 - [ ] Coordenadas das estações em graus decimais, com sinal negativo para Sul e Oeste
+- [ ] Todo valor do raster de uso tem correspondência; uma classe desconhecida para o trabalho, não vira pastagem por padrão
+- [ ] Um projeto de exemplo reaproveitado não traz um `calibration.cal` esquecido
 
 ## O fluxo de trabalho em seis passos
 
 1. **Criar o projeto** no QSWAT+ (botão SWAT+ no QGIS, *New Project*).
 2. **Delinear a bacia:** carregar o MDE, definir os limiares de canal e de rio (limiares menores
    geram mais sub-bacias e um modelo mais lento), indicar o exutório.
+   Defina os limiares você mesmo (os padrões dependem do tamanho do MDE) e **confira cada exutório**: conte quantos foram encaixados e compare a área de drenagem delineada com a da estação (uma razão fora de 0,8 a 1,25 indica ponto no lugar errado).
 3. **Criar as unidades de paisagem:** separar planície de inundação e encosta (método *DEM
    inversion* com os valores padrão é um bom começo).
 4. **Gerar as HRUs:** mapas de uso e solo com suas tabelas, classes de declividade, e filtrar as
    combinações pequenas (por exemplo, 10% por uso, solo e declividade).
+   Compare a área de cada uso **antes e depois** da filtragem: o filtro pode absorver em silêncio usos minoritários, como pastagem ou silvicultura. Proteja-os com *Exempt landuses*.
 5. **Configurar no SWAT+ Editor:** importar gerador climático e clima observado, definir o
    período e os **anos de aquecimento** (*warm-up*, de 1 a 3 anos), escolher as saídas.
 6. **Rodar e conferir:** uma rodada bem-sucedida termina com *Execution successfully completed*
@@ -132,6 +143,8 @@ instalador: assim você separa os problemas do software dos problemas dos seus d
 | Quase todo o fluxo é escoamento superficial | Curvas Número altas demais ou grupo hidrológico errado |
 | As culturas não crescem | Manejo não atribuído ou plantio fora do período |
 | O modelo para logo no início | Clima não cobre o período, ou arquivo referenciado ausente |
+| A rodada "termina bem", mas os resultados são estranhos | O SWAT+ ignora em silêncio nomes desconhecidos e arquivos de clima ausentes: procure "not found" em `diagnostics.out` |
+| A vazão de base some nas estiagens | Limiar de retorno do aquífero (`flo_min`) alto demais |
 
 ## Antes de calibrar: o balanço hídrico faz sentido?
 
@@ -144,12 +157,14 @@ de comparar com a vazão observada, abra `basin_wb_aa.txt` (média anual da baci
 - **Divisão do fluxo:** numa bacia perene com aquífero, quase tudo como escoamento superficial
   indica Curvas Número altas demais.
 - **Vegetação:** em HRUs agrícolas, biomassa perto de zero indica problema de manejo.
+- **Plausibilidade:** a ET da floresta deve superar a das lavouras, e a produtividade simulada deve ficar perto da PAM do município.
+- **Unidades de planície e encosta:** com elas, o escoamento da encosta que chega à planície pode ser contado duas vezes em `surq_gen` de `basin_wb`; feche o balanço com as saídas de HRU, aquífero e canal, e confira isso na sua versão do SWAT+.
 
 Só depois vem a calibração: primeiro a **calibração suave** (ajustar as frações do balanço
 hídrico a valores regionais), depois a **calibração rígida** com a vazão observada, e por fim a
 **validação** num período independente. Como referência para vazão mensal,
 [Moriasi et al. (2007)](https://doi.org/10.13031/2013.23153) consideram satisfatórios NSE > 0,50,
-|PBIAS| < 25% e RSR ≤ 0,70.
+|PBIAS| < 25% e RSR ≤ 0,70. Trate esses limiares como uma convenção para comparar rodadas, não como prova de que o modelo serve ao seu objetivo. O NSE e o [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) são dominados pelas vazões altas; confira também assinaturas hidrológicas: curva de permanência, Q95, índice de vazão de base e regime mensal.
 
 ## Para continuar aprendendo
 
@@ -179,6 +194,7 @@ hídrico a valores regionais), depois a **calibração rígida** com a vazão ob
 - Farkas, C., Shore, M., Cüceloglu, G., Czelnai, L., Nemes, A., Szabó, B., Čerkasova, N.,
   Idzelyté, R., & Weiland, S. (2023). *SWAP field-scale modelling protocol*. OPTAIN project
   deliverable. Zenodo. [doi:10.5281/zenodo.7907114](https://doi.org/10.5281/zenodo.7907114)
+- Gupta, H. V., Kling, H., Yilmaz, K. K., & Martinez, G. F. (2009). Decomposition of the mean squared error and NSE performance criteria: implications for improving hydrological modelling. *Journal of Hydrology, 377*(1-2), 80-91. [doi:10.1016/j.jhydrol.2009.08.003](https://doi.org/10.1016/j.jhydrol.2009.08.003)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.

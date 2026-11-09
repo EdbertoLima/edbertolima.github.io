@@ -82,6 +82,13 @@ Two rules prevent most errors:
   basins.
 - Folder and file names **without spaces, accents or special characters**.
 
+**Lessons from a real project with Brazilian data:**
+
+- **HIDROWEB streamflow:** use only the checked (*consistido*) series and read the status code of each day (1 real, 2 estimated, 3 doubtful, 4 dry gauge). Some years are entirely estimated; evaluate the model on real-status days. [CAMELS-BR](https://doi.org/10.5194/essd-12-2075-2020) is a useful cross-check.
+- **Station metadata is not always right:** reported drainage areas can be wrong and old coordinates are rounded. Check the area against your delineation.
+- **BR-DWGD gridded rainfall** ([Xavier et al., 2022](https://doi.org/10.1002/joc.7731)) matches gauges in totals and timing, but has too many light-rain days and too few heavy ones. With the Curve Number method that means less surface runoff, which calibration then hides. Compare wet-day and heavy-rain frequencies with ANA gauges before using it.
+- **ZARC sowing windows** are insurance periods, not observed practice: use Conab crop progress for real sowing dates and IBGE PAM yields to check crop growth.
+
 ## Checklist before opening QSWAT+
 
 Half an hour of checking here saves hours later:
@@ -94,16 +101,20 @@ Half an hour of checking here saves hours later:
 - [ ] The outlet lies on (or within 300 m of) the generated drainage network
 - [ ] The climate record covers the simulation period plus the warm-up years
 - [ ] Station coordinates are in decimal degrees, negative for South and West
+- [ ] Every land-use raster value has a lookup row; an unknown class stops the work, it does not default to pasture
+- [ ] A reused example project does not carry a leftover `calibration.cal`
 
 ## The workflow in six steps
 
 1. **Create the project** in QSWAT+ (SWAT+ button in QGIS, *New Project*).
 2. **Delineate the watershed:** load the DEM, set the channel and stream thresholds (smaller
    thresholds give more subbasins and a slower model), and add the outlet.
+   Set the thresholds yourself (the defaults depend on the DEM size), then **check every outlet**: count how many snapped, and compare the delineated drainage area with the gauge's (a ratio outside 0.8-1.25 means the point is in the wrong place).
 3. **Create landscape units:** separate floodplain and upslope areas (the *DEM inversion* method
    with default values is a good start).
 4. **Generate HRUs:** land-use and soil maps with their lookup tables, slope classes, and a filter
    to drop small combinations (for example 10% for land use, soil and slope).
+   Compare each land use's area **before and after** filtering: the filter can quietly absorb minority covers such as pasture or plantations. Protect them with *Exempt landuses*.
 5. **Configure in the SWAT+ Editor:** import the weather generator and observed climate, set the
    period and the **warm-up years** (1 to 3), and choose the outputs.
 6. **Run and check:** a successful run ends with *Execution successfully completed* in
@@ -123,6 +134,8 @@ you separate software problems from problems in your own data.
 | Almost all flow is surface runoff | Curve Numbers too high, or wrong hydrologic soil group |
 | Crops do not grow | No management assigned, or planting outside the period |
 | The model stops right away | Climate does not cover the period, or a referenced file is missing |
+| The run "succeeds" but results look odd | SWAT+ silently skips unknown names and missing weather files: search `diagnostics.out` for "not found" |
+| Baseflow disappears in dry spells | Aquifer return-flow threshold (`flo_min`) too high |
 
 ## Before calibrating: does the water balance make sense?
 
@@ -136,12 +149,14 @@ balance) and check:
 - **Flow partitioning:** in a perennial watershed with an aquifer, nearly all flow as surface
   runoff points to Curve Numbers that are too high.
 - **Vegetation:** near-zero biomass in agricultural HRUs points to a management problem.
+- **Plausibility:** forest ET should exceed cropland ET, and simulated yields should be near the municipal PAM yields.
+- **Floodplain and upslope units:** with these landscape units, upslope runoff that runs on to the floodplain can be counted twice in `surq_gen` of `basin_wb`; close the balance with HRU, aquifer and channel outputs instead, and check this in your SWAT+ version.
 
 Only then comes calibration: first **soft calibration** (matching the water-balance fractions to
 regional values), then **hard calibration** against observed streamflow, and finally
 **validation** on an independent period. As a reference for monthly streamflow,
 [Moriasi et al. (2007)](https://doi.org/10.13031/2013.23153) consider NSE > 0.50, |PBIAS| < 25% and
-RSR ≤ 0.70 satisfactory.
+RSR ≤ 0.70 satisfactory. Treat these thresholds as a convention for comparing runs, not as proof that a model is fit for purpose. NSE and [KGE (Gupta et al., 2009)](https://doi.org/10.1016/j.jhydrol.2009.08.003) are dominated by high flows, so also check hydrological signatures: the flow duration curve, Q95, the baseflow index and the monthly regime.
 
 ## Keep learning
 
@@ -171,6 +186,7 @@ RSR ≤ 0.70 satisfactory.
 - Farkas, C., Shore, M., Cüceloglu, G., Czelnai, L., Nemes, A., Szabó, B., Čerkasova, N.,
   Idzelyté, R., & Weiland, S. (2023). *SWAP field-scale modelling protocol*. OPTAIN project
   deliverable. Zenodo. [doi:10.5281/zenodo.7907114](https://doi.org/10.5281/zenodo.7907114)
+- Gupta, H. V., Kling, H., Yilmaz, K. K., & Martinez, G. F. (2009). Decomposition of the mean squared error and NSE performance criteria: implications for improving hydrological modelling. *Journal of Hydrology, 377*(1-2), 80-91. [doi:10.1016/j.jhydrol.2009.08.003](https://doi.org/10.1016/j.jhydrol.2009.08.003)
 - Moriasi, D. N., Arnold, J. G., Van Liew, M. W., Bingner, R. L., Harmel, R. D., & Veith, T. L.
   (2007). Model evaluation guidelines for systematic quantification of accuracy in watershed
   simulations. *Transactions of the ASABE, 50*(3), 885-900.

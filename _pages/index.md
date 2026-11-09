@@ -13,7 +13,7 @@ PhD in Forest Engineering
 P.O. Box 68 (Pietari Kalmin katu 5)<br/>
 FI-00014 University of Helsinki, Finland<br/>
 -->
-<a href="mailto:edberto.moura@gmail.com">edberto.moura@gmail.com</a> <i class="fa-solid fa-phone fa-2xs"></i> +43 681 1021 7046
+<a href="mailto:edberto.mouralima@baw.at">edberto.mouralima@baw.at</a> - <a href="mailto:edberto.moura@gmail.com">edberto.moura@gmail.com</a> <i class="fa-solid fa-phone fa-2xs"></i> +43 681 1021 7046
 
 
 <div id="webaddress">
@@ -58,7 +58,7 @@ FI-00014 University of Helsinki, Finland<br/>
 
 ## Publications
 
-*Publication list also available [in Google Scholar](https://scholar.google.com/citations?user=rbwTqKIAAAAJ&hl=en).<!--\* = student as lead author, &dagger; = shared first authorship.*-->
+*Publication list also available [in Google Scholar](https://scholar.google.com/citations?user=rbwTqKIAAAAJ&hl=en).*<!--\* = student as lead author, &dagger; = shared first authorship.*-->
 
 <!--
 ### Books
@@ -83,17 +83,17 @@ Niemeyer J, Resende FM, **Lima, E. M.** and Vale MM. Risk and adaptation of soci
 `2024`
 Mehdi-Schulz, B., Zoboli, O., Schürz, C., Strenge, E., **Lima, E. M.**, Parajka, J., Wang, C., Zessner, M., & Schönhart, M. The impacts of climate change on nitrogen losses to the environment in Austria: A dual model analysis across spatial and temporal scales to support policy decisions. Science of The Total Environment, 918, 170730. doi: [10.1016/j.scitotenv.2024.170730](https://doi.org/10.1016/j.scitotenv.2024.170730), 2024.
 
-`2023`  
+`2023`
 Reichert, J. M., Morales, B., **Lima, E. M.**, de Bastos, F., Morales, C. A. S., & de Araújo, E. F. Soil morphological, physical and chemical properties affecting *Eucalyptus spp.* productivity on Entisols and Ultisols. *Soil and Tillage Research, 226*, 105563. doi: [10.1016/j.still.2022.105563](https://doi.org/10.1016/j.still.2022.105563), 2023.
 
-`2021`  
+`2021`
 Reichert, J. M., Morales, C. A. S., **Lima, E. M.**, de Bastos, F., Sampietro, J. A., de Araújo, E. F., & Srinivasan, R. Best tillage practices for early-growth of clonal eucalyptus in soils with distinct granulometry, drainage and profile depth. *Soil and Tillage Research, 212*, 105038. doi: [10.1016/j.still.2021.105038](https://doi.org/10.1016/j.still.2021.105038), 2021.
 
 da Rosa, D. P., Reichert, J. M., **Lima, E. M.**, & da Rosa, V. T. Chiselling and wheeling on sandy loam long-term no-tillage soil: compressibility and load-bearing capacity. *Soil Research.*  doi: [10.1071/SR20109](https://doi.org/10.1071/SR20109), 2021.
 
 Chasmer, L., **Lima, E. M.**, Mahoney, C., Hopkinson, C., Montgomery, J., & Cobbaert, D. Shrub changes with proximity to anthropogenic disturbance in boreal wetlands determined using bi-temporal airborne lidar in the Oil Sands Region, Alberta Canada. *Science of The Total Environment,* 146638. doi: [10.1016/j.scitotenv.2021.146638](https://doi.org/10.1016/j.scitotenv.2021.146638), 2021.
 
-`2020`  
+`2020`
 Paz, T. D. C., Menegaes, J. F., Backes, F. A. A. L., Wegermann, K., Difante, A. C., & **Lima, E. M.** Importance of choosing vegetation for the urban road network: a literature review. *Research, Society and Development, 9*(12), e5791210847-e5791210847. doi: [10.33448/rsd-v9i12.10847](https://doi.org/10.33448/rsd-v9i12.10847), 2020.
 
 Resende, F. d. M., Denman, L. A. C., Selva, G. V., Campanhão, L. M. B., Nobre, R. L. G., Jimenez, Y. G., **Lima, E. M.**, Niemeyer, J. A conceptual model to assess the impact of anthropogenic drivers on water-related ecosystem services in the Brazilian Cerrado. *Biota Neotropica, 20*. doi: [10.1590/1676-0611-BN-2019-0899](https://doi.org/10.1590/1676-0611-BN-2019-0899), 2020.
@@ -104,7 +104,7 @@ in Biome Cerrado, Brasília-DF]. *Nativa, 6*, 787. doi: [10.31413/nativa.v6i0.62
 
 de Oliveira, T., **Lima, E. M.**, Sanquetta, C., & dalla Corte, A. Simultaneous adjustment in the prediction of above-ground biomass in *Araucaria angustifolia* (Bertol.) Kuntze. *BIOFIX Scientific Journal, 3*(1), 137-144. doi: [10.5380/biofix.v3i1.58119](https://doi.org/10.5380/biofix.v3i1.58119), 2018.
 
-`2017`  
+`2017`
 Cerqueira, C., Môra, R., Lenzi, I., Drescher, R., **Lima, E. M.**, Lisboa, G. d. S., & França, L. d. J. Modeling height of *Pinus caribaea* var. *hondurensis* in different spacing. *BIOFIX Scientific Journal, 2*(2), 93-99. doi: [10.5380/biofix.v2i2.56012](https://doi.org/10.5380/biofix.v2i2.56012), 2017.
 
 ### Preprints
@@ -116,14 +116,14 @@ Ebling, A. A., Behling, A., **Lima, E. M.**, MacFarlane, D. W., & David, H. C. S
 
 ### Summary Published in Proceedings of Conferences
 
-`2024`  
+`2024`
 **Lima, E.M.**, Böning, K., and Mehdi-Schulz, B. Comparative analysis of two tillage systems and their implications for soil hydrology, carbon dynamics, and nitrogen cycling in a changing climate. *SWAT Conference, Lima, Peru*.
 
 **Lima, E.M.**, Böning, K., Arnillas, C. A., and Mehdi-Schulz, B. APEX R tool: An Open-source R scripted workflow to prepare model inputs and execute APEX simulations in parallel. *SWAT Conference, Lima, Peru*.
 
 **Lima, E.M.**, Böning, K., Ding, F., Stumpp, C., Holzkämper, A., and Mehdi-Schulz, B. Assessing the impacts of future climate scenarios on soil management practices and their hydraulic properties. *EGU General Assembly, Vienna, Austria*.
 
-`2023`  
+`2023`
 Stecher G, **Lima, E.M.**, Herrnegger M, Mehdi-Schulz B. Challenges and potential approaches of applying SWAT in a data scarce and hydrological complex region in Uganda (East Africa). *SWAT Conference, Aarhus, Denmark*.
 
 Bano M-S, **Lima, E.M.**, Claudine E, Veronika G. Integrating farmer decisions in dynamic land use change modelling to simulate future nitrate losses to water bodies. *Ecological Models for Tomorrow’s Solutions, Conference*.
@@ -132,15 +132,15 @@ Bano M-S, **Lima, E.M.**, Claudine E, Veronika G. Integrating farmer decisions i
 
 Bano M-S, **Lima, E.M.**, C E, V G. Linking an ABM to SWAT to determine the impacts of future changes to surface water quality. *SWAT Conference, Aarhus, Denmark*.
 
-`2022`  
+`2022`
 **Lima, E.M.**, Reichert J, Schürz C, Mehdi-Schulz B. Simulating streamflow - Does historical land use matter? Comparing two approaches to simulating historic discharge based on dynamic land use and cover maps. *SWAT Conference, Prague*.
 
-`2020`  
+`2020`
 **Lima, E.M.**, Souza, E. E. B., Weiler, E. B., Reichert, J. M., Deus Junior, J. C. Influência de diferentes usos do solo no deflúvio de pequenas Bacias Hidrográficas [Influence of different soil uses on water discharge in Small Watersheds]. *XIII Reunião Sul Brasileira de Ciência do Solo, Porto Alegre*.
 
 **Lima, E.M.**, Niemeyer, J., Batistao, A. C. Aumentado a precisão do modelo Water Yield do InVEST na estimativa de Serviços ecossistemas com base em atributos pedológicos regional [Increasing the accuracy of the Water Yield model (InVEST) to estimate hydrological ecosystem services based on regional pedological attributes]. *Conferencia Regional de la Ecosystem Services Partnership Latinoamérica y el Caribe, Cidade do México*.
 
-`2019`  
+`2019`
 Weiler, E. B., Reichert, J. M., Mantovanelli, B. C., Barbosa, J. S., Bastos, F., Souza, E. E. B., **Lima, E.M.** Correlação do setor florestal no desenvolvimento socioeconômico e humano do COREDE Celeiro, RS [Correlation between the Forestry sector and the human socioeconomic development of COREDE Celeiro, RS]. *34ª Jornada Acadêmica Integrada, Santa Maria*.
 
 **Lima, E.M.**, Reichert, J. M., Minella, J. P. G., Rovedder, A. P. M., Souza, E. E. B., Barbosa, J. S., Weiler, E. B. Ocupação do solo, fragmentação da paisagem e a redução da cobertura florestal na bacia hidrográfica do Guaporé-RS [Land use, landscape fragmentation, and the reduction of forest cover in the Guaporé-RS watershed]. *34ª Jornada Acadêmica Integrada, Santa Maria*.
@@ -151,10 +151,10 @@ Barbosa, J. S., Reichert, J. M., Carducci, C. E., Kohn, L. S., Weiler, E. B., Ba
 
 Correa, U. O. S., Reichert, J. M., **Lima, E.M.**, Cavalli, J. P. Uso do software R em estudos pedológicos: compreendendo os atributos edáficos em uma coleção de perfis de solo [Using R software in pedological studies: understanding the soil attributes in a collection of soil profiles]. *34ª Jornada Acadêmica Integrada, Santa Maria*.
 
-`2018`  
+`2018`
 **Lima, E.M.**, Curcio, G. R., Bonnet, A., Reichert, J. M., Palma, V. H. Simulação do fluxo de água em neossolo regolítico distrófico petroplíntico e obstáculos para restauração de áreas degradadas [Simulation of water flow in petroplinic dystrophic Regolitic Neossol and obstacles to the restoration of degraded areas]. *II Conferência Brasileira de Restauração Ecológica, Belo Horizonte, MG*.
 
-`2014`  
+`2014`
 **Lima, E.M.**, Rezende, A.V., Oliveira, L.S.B., Azevedo, G.B., Matos, N.M. Diversidade e riqueza em área de Cerrado sensu stricto após diferentes intensidades de exploração da vegetação [Diversity and richness in Cerrado sensu stricto areas under different logging intensities]. *VIII Simpósio Brasileiro de Pós-Graduação em Ciências Florestais, Recife*.
 
 Oliveira, L.S.B., Rezende, A.V., Azevedo, G.B., **Lima, E.M.**, Matos, N.M. Diversidade e dispersão das espécies lenhosas em áreas de cerrado sensu stricto, no período de 1996 a 2011, após supressão da vegetação em 1988 [Diversity and dispersion of woody species in areas of cerrado sensu stricto, from 1996 to 2011, after suppression of vegetation in 1988]. *VIII Simpósio Brasileiro de Pós-Graduação em Ciências Florestais, Recife*.
@@ -163,10 +163,10 @@ Oliveira, L.S.B., Rezende, A.V., Azevedo, G.B., **Lima, E.M.**, Matos, N.M. Dive
 
 ### Other Publications  
 
-`2017`  
+`2017`
 Milani, J. E. F., **Lima, E.M.** Restauração de Áreas Degradadas. *(Curso de curta duração ministrado/Extensão)*.  
 
-`2016`  
+`2016`
  Bonnet, A., Curcio, G. R., **Lima, E.M.**, Santos, D., Ogata, R. Poda experimental de *Schinus terebinthifolius* Raddi (pimenta-rosa) em área de Cerrado. *(Nota técnica de pesquisa)*. 
 
 
@@ -199,20 +199,21 @@ DATA-EPOS: Modern and efficient metadata and data handling platforms for FIN-EPO
 
 ### International Scholarships
 
-`2021`  
+`2021`
 **Doctoral Research Scholarship - CAPES/PRINT Program**  
 - **Process Number:** 88887.574831/2020-00  
 - **Host Institution:** Universität für Bodenkultur Wien (BOKU), Austria  
 - **Scholarship Program:** CAPES/PRINT - Institutional Internationalization Program (Edital nº 41/2017)  
 - **Modality:** Doctoral Sandwich (Doutorado Sanduíche)
 
-`2019`  
+`2019`
 **Emerging Leaders in the Americas Program (ELAP) Scholarship**  
 - **Host Institution:** University of Lethbridge, Canada
 - **Scholarship Program:** Global Affairs Canada International Scholarships Program  
 
 <br/>
 `2013 - 2015`
+**Undergraduate Sandwich Scholarship - Science Without Borders (CAPES)**  
 - **Scholarship Program:** Science Without Borders Program (Ciência Sem Fronteiras - CsF) 
 - **Process Number:** 88888.024634/2013-00  
 - **Host Institution:** Institute of Technology Sligo, Ireland  
@@ -221,12 +222,12 @@ DATA-EPOS: Modern and efficient metadata and data handling platforms for FIN-EPO
 
 ### National Scholarships 
 
-`2018 - 2022`  
+`2018 - 2022`
 **CAPES Social Demand Program - Doctorate**  
 - **Institution:** Universidade Federal de Santa Maria, Brazil  
 - **Program:** Forest Engineering (Doutorado)  
 
-`2016 - 2018`  
+`2016 - 2018`
 **CAPES Social Demand Program - Master’s**  
 - **Institution:** Universidade Federal do Paraná, Brazil  
 - **Program:** Forest Engineering (Mestrado)  
@@ -257,30 +258,30 @@ DATA-EPOS: Modern and efficient metadata and data handling platforms for FIN-EPO
 -->
 ### Presentations
 
-`2024`  
+`2024`
 **Lima, E.M.**, Böning, K., and Mehdi-Schulz, B. Comparative analysis of two tillage systems and their implications for soil hydrology, carbon dynamics, and nitrogen cycling in a changing climate. *SWAT Conference 2024*, Lima, Peru, 9–13 September 2024. [Link](https://swatconference.tamu.edu/#/book-of-abstracts/2024-peru).
 
 **Lima, E.M.**, Böning, K., Arnillas, C. A., and Mehdi-Schulz, B. APEX R tool: An Open-source R scripted workflow to prepare model inputs and execute APEX simulations in parallel. *SWAT Conference 2024*, Lima, Peru, 9–13 September 2024. [Link](https://swatconference.tamu.edu/#/book-of-abstracts/2024-peru).  
 
-`2019`  
+`2019`
 Chasmer, L., Hopkinson, C., Mahoney, C., **Lima, E.M.**, Montgomery, J., Cobbaert, D. Assessing wetland ecosystem changes using remotely sensed data. *(Presentation/Other)*.
 
 Chasmer, L., **Lima, E.M.**, Mahoney, C., Hopkinson, C., Cobbaert, D. Comparing spatial distribution of vegetation structural change in wetlands proximal to disturbance: Oil sands region, Alberta, Canada. *(Presentation/Conference or Colloquium)*.  
 
-`2018`  
+`2018`
 **Lima, E.M.**, Curcio, G. R., Bonnet, A., Reichert, J. M., Palma, V. H. Simulação do fluxo de água em Neossolo Regolítico Distrófico Petroplíntico e obstáculos para restauração de áreas degradadas. *(Presentation/Conference or Colloquium)*.  
 
-`2014`  
+`2014`
 **Lima, E.M.**, Rezende, A. V., Oliveira, L. S. B., Azevedo, G. B., Matos, N. M. Diversidade e riqueza em área de Cerrado sensu stricto após diferentes intensidades de exploração da vegetação. *(Presentation/Symposium)*.
 
 Oliveira, L. S. B., Rezende, A. V., Azevedo, G. B., **Lima, E.M.**, Matos, N. M. Diversidade e dispersão das espécies lenhosa em áreas de cerrado sensu stricto, no período de 1996 a 2011, após supressão da vegetação em 1988. *(Presentation/Symposium)*.  
 
-`2013`  
+`2013`
 **Lima, E.M.**, Rezende, A. V., Oliveira, L. S. B., Miranda, J. F. N. Dinâmica de uma População de Carvoeiro submetido a tratamentos Silviculturais, em áreas de Cerrado Sensu Stricto. *(Presentation/Congress)*.
 
 Miranda, J. F. N., Rezende, A. V., **Lima, E.M.**, Oliveira, L. S. B., Azevedo, G. B. Dinâmica de uma População de Pequizeiros na Estação Ecológica de Águas Emendadas, Planaltina - DF (2008–2011). *(Presentation/Congress)*.  
 
-`2012`  
+`2012`
 **Lima, E.M.**, Rezende, A. V., Oliveira, L. S. B., Miranda, J. F. N., Sampaio, S. S. Dinâmica de um cerrado sensu stricto seis anos após intervenção por corte raso e diferentes intensidades de desbaste. *(Presentation/Congress)*.  
 
 ## Teaching
@@ -289,10 +290,10 @@ Miranda, J. F. N., Rezende, A. V., **Lima, E.M.**, Oliveira, L. S. B., Azevedo, 
 `2020`
 **Soil Physics**, *Departamento de Solos, Universidade Federal de Santa Maria*, RS, Brazil.
 
-`2019`   
+`2019`
 **Soil Physics**, *Departamento de Solos, Universidade Federal de Santa Maria*, RS, Brazil.
 
-`2017`  
+`2017`
   **Dendrology in Southern Brazil**, *Departamento de Ciências Florestais, Universidade Federal do Paraná*, PR, Brazil.
 
 <!-- 
@@ -357,8 +358,8 @@ Guest lectures in years 2010, 2019, 2021, 2022
 - \- Introduction to Oceanography laboratory
 --->
 
-<!--
 ## Supervised Theses
+<!--
 
 ### Postdoctoral researchers
 
@@ -623,8 +624,7 @@ American Geophysical Union
 
 Native: Portuguese  
 Proficient: English (C1)  
-Independent: Spanish (B2)  
-Basic: German (A2)
+Independent: Spanish (B2), German (B1)
 
 
 ## Personal

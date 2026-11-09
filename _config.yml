@@ -21,7 +21,7 @@ title                    : #"Dr. Edberto Lima"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Edberto Lima"
-description              : "A brief description of a junior scientist's life and the struggles they face in securing funding." #"An amazing website."
+description              : "Edberto Moura Lima - Senior Researcher in ecohydrology and remote sensing of evapotranspiration at BAW Research, Austria."
 url                      : "edbertolima.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  # the subpath of your site, e.g. "/blog"
 repository               : "EdbertoLima/edbertolima.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Edberto Moura Lima"
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD in Forest Science"
-  location         : "Viena, Austria"
+  bio              : "Senior Researcher, BAW Research. Ecohydrology and remote sensing of evapotranspiration."
+  location         : "Vienna, Austria"
   email            : "edberto.moura@gmail.com"
   links:
     - label: "LinkedIn"

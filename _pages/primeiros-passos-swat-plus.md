@@ -247,8 +247,8 @@ mensal.
 
 ## Referências
 
-- Arnold, J. G., Čerkasova, N., White, M., et al. *Soil and Water Assessment Tool Plus (SWAT+)*.
-  Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
+- Arnold, J. G., Čerkasova, N., White, M., et al. (2026). *Soil and Water Assessment Tool Plus
+  (SWAT+)* [Software]. Zenodo. [doi:10.5281/zenodo.14983533](https://doi.org/10.5281/zenodo.14983533)
 - Chagas, V. B. M., et al. (2020). CAMELS-BR: hydrometeorological time series and landscape
   attributes for 897 catchments in Brazil. *Earth System Science Data, 12*(3), 2075-2096.
   [doi:10.5194/essd-12-2075-2020](https://doi.org/10.5194/essd-12-2075-2020)
